@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VK-Monitor.WebMVC", "VK-Monitor.WebMVC\VK-Monitor.WebMVC.csproj", "{B8B05C4A-C6CF-4F85-985E-4AFC981A17F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VK-Monitor.BusinessLogic", "VK-Monitor.BusinessLogic\VK-Monitor.BusinessLogic.csproj", "{8B7850EB-5E01-44F0-83BA-3FEDE287F5A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VK-Monitor.Domain", "VK-Monitor.Domain\VK-Monitor.Domain.csproj", "{483BD8D1-9006-42C6-B9CB-A324C082F966}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{B8B05C4A-C6CF-4F85-985E-4AFC981A17F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8B05C4A-C6CF-4F85-985E-4AFC981A17F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8B05C4A-C6CF-4F85-985E-4AFC981A17F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B7850EB-5E01-44F0-83BA-3FEDE287F5A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B7850EB-5E01-44F0-83BA-3FEDE287F5A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B7850EB-5E01-44F0-83BA-3FEDE287F5A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B7850EB-5E01-44F0-83BA-3FEDE287F5A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{483BD8D1-9006-42C6-B9CB-A324C082F966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{483BD8D1-9006-42C6-B9CB-A324C082F966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{483BD8D1-9006-42C6-B9CB-A324C082F966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{483BD8D1-9006-42C6-B9CB-A324C082F966}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
