@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VkNet;
 
-namespace VK_Monitor.BusinessLogic
+namespace VK_Monitor.BusinessLogic.Interfaces
 {
-    public class Class1
+    public interface IVKhandle
     {
+        VkApi GetVKHandler();
     }
 }
