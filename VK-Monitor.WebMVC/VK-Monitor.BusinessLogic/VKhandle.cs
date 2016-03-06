@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using VK_Monitor.BusinessLogic.Interfaces;
+using VK_Monitor.Domain.Entities;
 using VkNet;
 using VkNet.Enums.Filters;
 using VkNet.Enums.SafetyEnums;
@@ -14,29 +16,52 @@ namespace VK_Monitor.BusinessLogic
     {
         string adminId = string.Empty;
         string adminPassword = string.Empty;
+        ulong applicationId;
 
         VkApi vk;
 
-        public VKhandle(string adminId, string adminPassword)
+        Dictionary<string, Report> reports = new Dictionary<string, Report>();
+
+        public VKhandle(ulong applicationId, string adminId, string adminPassword)
         {
+            this.applicationId = applicationId;
             this.adminId = adminId;
             this.adminPassword = adminPassword;
 
             ApiAuthParams authorize = new ApiAuthParams()
             {
-                ApplicationId = 1111111,
+                ApplicationId = applicationId,
                 Login = adminId,
                 Password = adminPassword,
-                //Settings = Settigs.All
+                Settings = Settings.All
             };
 
             vk = new VkApi();
-            vk.Authorize(authorize);
+
+            try
+            {
+                vk.Authorize(authorize);
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+           
         }
 
         public VkApi GetVKHandler()
         {
             return vk;
+        }
+
+        public List<object> GetAllReportData()
+        {
+            List<object> reportsData = new List<object>();
+
+            foreach (Report report in reports.Values)
+                reportsData.Add(report.GetData());
+
+            return reportsData;
         }
     }
 }
