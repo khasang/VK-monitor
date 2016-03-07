@@ -12,7 +12,7 @@ namespace VK_Monitor.BusinessLogic.Interfaces
     {
         VkApi GetVK { get; }
         object GetReportData(Report report, ulong targetUserId);
-        void AddUserId(ulong userId);
-        void DeleteUserId(ulong userId);
+        void AddTarget(ulong userId);
+        void DeleteTarget(ulong userId);
     }
 }

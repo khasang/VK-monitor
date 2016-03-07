@@ -20,7 +20,7 @@ namespace VK_Monitor.BusinessLogic
 
         VkApi vk;
 
-        List<ulong> users = new List<ulong>();
+        List<ulong> targets = new List<ulong>();
 
         public VKhandle(ulong applicationId, string adminId, string adminPassword)
         {
@@ -58,14 +58,14 @@ namespace VK_Monitor.BusinessLogic
             return report.GetData(vk, targetUserId);
         }
 
-        public void AddUserId(ulong userId)
+        public void AddTarget(ulong userId)
         {
-            users.Add(userId);
+            targets.Add(userId);
         }
 
-        public void DeleteUserId(ulong userId)
+        public void DeleteTarget(ulong userId)
         {
-            users.Remove(userId);
+            targets.Remove(userId);
         }
 
     }
