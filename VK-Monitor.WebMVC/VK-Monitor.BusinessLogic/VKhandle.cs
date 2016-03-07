@@ -20,7 +20,7 @@ namespace VK_Monitor.BusinessLogic
 
         VkApi vk;
 
-        Dictionary<string, Report> reports = new Dictionary<string, Report>();
+        List<ulong> users = new List<ulong>();
 
         public VKhandle(ulong applicationId, string adminId, string adminPassword)
         {
@@ -45,23 +45,28 @@ namespace VK_Monitor.BusinessLogic
             catch(Exception ex)
             {
                 Debug.WriteLine(ex.Message);
-            }
-           
+            }           
         }
 
-        public VkApi GetVKHandler()
+        public VkApi GetVK
         {
-            return vk;
+            get { return vk; }
         }
 
-        public List<object> GetAllReportData()
+        public object GetReportData(Report report, ulong targetUserId)
         {
-            List<object> reportsData = new List<object>();
-
-            foreach (Report report in reports.Values)
-                reportsData.Add(report.GetData());
-
-            return reportsData;
+            return report.GetData(vk, targetUserId);
         }
+
+        public void AddUserId(ulong userId)
+        {
+            users.Add(userId);
+        }
+
+        public void DeleteUserId(ulong userId)
+        {
+            users.Remove(userId);
+        }
+
     }
 }

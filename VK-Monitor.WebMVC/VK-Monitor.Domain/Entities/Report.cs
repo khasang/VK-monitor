@@ -9,13 +9,6 @@ namespace VK_Monitor.Domain.Entities
 {
     public abstract class Report
     {
-        VkApi vk;
-
-        public Report(VkApi vk)
-        {
-            this.vk = vk;
-        }
-
-        public abstract object GetData();
+        public abstract object GetData(VkApi vk, ulong userId);
     }
 }

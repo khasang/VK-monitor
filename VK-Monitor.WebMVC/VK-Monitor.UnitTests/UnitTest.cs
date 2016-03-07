@@ -14,7 +14,7 @@ namespace VK_Monitor.UnitTests
         {
             IVKhandle vk = new VKhandle(34234, "adminId", "Password");
 
-            Assert.IsInstanceOfType(vk.GetVKHandler(), typeof(VkApi));
+            Assert.IsInstanceOfType(vk.GetVK, typeof(VkApi));
         }
     }
 }

@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VK_Monitor.Domain.Entities;
 using VkNet;
 
 namespace VK_Monitor.BusinessLogic.Interfaces
 {
     public interface IVKhandle
     {
-        VkApi GetVKHandler();
+        VkApi GetVK { get; }
+        object GetReportData(Report report, ulong targetUserId);
+        void AddUserId(ulong userId);
+        void DeleteUserId(ulong userId);
     }
 }

@@ -9,12 +9,7 @@ namespace VK_Monitor.Domain.Entities
 {
     public class Report1 : Report
     {
-        public Report1(VkApi vk) : base (vk)
-        {
-
-        }
-
-        public override object GetData()
+        public override object GetData(VkApi vk, ulong userId)
         {
             throw new NotImplementedException();
         }
