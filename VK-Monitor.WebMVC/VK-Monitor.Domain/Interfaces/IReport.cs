@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using VkNet;
 
-namespace VK_Monitor.Domain.Entities
+namespace VK_Monitor.Domain.Interfaces
 {
     public interface IReport
     {
