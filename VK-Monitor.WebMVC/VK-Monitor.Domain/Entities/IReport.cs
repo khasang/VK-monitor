@@ -7,8 +7,8 @@ using VkNet;
 
 namespace VK_Monitor.Domain.Entities
 {
-    public abstract class Report
+    public interface IReport
     {
-        public abstract object GetData(VkApi vk, ulong userId);
+        object GetData(VkApi vk, ulong userId);
     }
 }

@@ -52,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="Entities\Report.cs" />
+    <Compile Include="Entities\IReport.cs" />
     <Compile Include="Entities\Report1.cs" />
     <Compile Include="Entities\Report2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

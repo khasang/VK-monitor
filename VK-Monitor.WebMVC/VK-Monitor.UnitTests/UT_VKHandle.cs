@@ -7,7 +7,7 @@ using VK_Monitor.BusinessLogic.Interfaces;
 namespace VK_Monitor.UnitTests
 {
     [TestClass]
-    public class UnitTest
+    public class UT_VKHandle
     {
         [TestMethod]
         public void TestMethod1()

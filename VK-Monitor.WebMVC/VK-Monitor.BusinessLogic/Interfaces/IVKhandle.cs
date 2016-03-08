@@ -11,7 +11,7 @@ namespace VK_Monitor.BusinessLogic.Interfaces
     public interface IVKhandle
     {
         VkApi GetVK { get; }
-        object GetReportData(Report report, ulong targetUserId);
+        object GetReportData(IReport report, ulong targetUserId);
         void AddTarget(ulong userId);
         void DeleteTarget(ulong userId);
     }

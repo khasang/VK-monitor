@@ -53,7 +53,7 @@ namespace VK_Monitor.BusinessLogic
             get { return vk; }
         }
 
-        public object GetReportData(Report report, ulong targetUserId)
+        public object GetReportData(IReport report, ulong targetUserId)
         {
             return report.GetData(vk, targetUserId);
         }

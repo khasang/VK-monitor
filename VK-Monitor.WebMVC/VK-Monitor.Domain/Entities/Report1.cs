@@ -7,7 +7,7 @@ using VkNet;
 
 namespace VK_Monitor.Domain.Entities
 {
-    public class Report1 : Report
+    public class Report1 : IReport
     {
         public override object GetData(VkApi vk, ulong userId)
         {
