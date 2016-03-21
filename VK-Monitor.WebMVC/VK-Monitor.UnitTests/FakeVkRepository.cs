@@ -18,5 +18,11 @@ namespace VK_Monitor.UnitTests
             this.adminId = adminId;
             this.adminPassword = adminPassword;
         }
+
+
+        public Dictionary<string, IList<string>> Users(ulong userId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

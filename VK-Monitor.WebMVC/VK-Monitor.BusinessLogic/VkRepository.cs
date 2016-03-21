@@ -15,6 +15,12 @@ namespace VK_Monitor.BusinessLogic
     public class VkRepository : IVkRepository
     {
         VkApi vk = new VkApi();
+        ILogger loggerService;
+
+        public VkRepository(ILogger logerService)
+        {
+            this.loggerService = logerService;
+        }
 
         public void Authorize(ulong applicationId, string adminId, string adminPassword)
         {
@@ -42,6 +48,12 @@ namespace VK_Monitor.BusinessLogic
              .WriteTo.Seq("http://localhost:5341")
                 // есть возможность писать Verbose уровень в текстовый файл, а например, Error в Windows Event Logs
              .CreateLogger();
+        }
+
+
+        public Dictionary<string, IList<string>> Users(ulong userId)
+        {
+            throw new NotImplementedException();
         }
     }
 }

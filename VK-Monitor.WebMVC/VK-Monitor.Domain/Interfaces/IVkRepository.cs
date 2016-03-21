@@ -9,5 +9,6 @@ namespace VK_Monitor.Domain.Interfaces
     public interface IVkRepository
     {
         void Authorize(ulong applicationId, string adminId, string adminPassword);
+        Dictionary<string, IList<string>> Users(ulong userId);
     }
 }
