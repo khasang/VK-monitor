@@ -14,52 +14,36 @@ namespace VK_Monitor.UnitTests
     [TestClass]
     public class UT_VKHandle
     {
-        [TestMethod]
-        public void TestMethod1()
+        [SetUp]
+        public void Setup()
         {
-            ulong userId = 12345;
 
-            ulong applicationId = 11111;
-            string adminId = "22222";
-            string adminPassword = "qqqqqq";
-
-            var mockRepository = new Mock<IVkRepository>();
-
-            mockRepository.Setup(u => u.Users(userId)).Returns(new Dictionary<string, IList<string>>());
-            mockRepository.Verify(a => a.Authorize(applicationId, adminId, adminPassword));
-
-            var mockLogger = new Mock<ILogger>();
-
-            var mockReport = new Mock<IReport>();
-            mockReport.Setup(g => g.GetData(mockRepository.Object, userId)).Returns("report");
-
-            IVKhandle vk = new VkHandle(mockRepository.Object, mockLogger.Object);
-
-            object report = vk.GetReportData(mockReport.Object, userId);
-
-            Assert.AreEqual(report as string, "report");
         }
 
         [TestMethod]
         public void GetReportData_InteractionRepository_RightReport()
         {
-            ulong userId = 12345;
-            var mockLogger = new Mock<ILogger>();
             var mockRepository = new Mock<IVkRepository>();
+            var mockLogger = new Mock<ILogger>();
             var mockReport = new Mock<IReport>();
-
-            mockReport.Setup(g => g.GetData(mockRepository.Object, userId)).Returns("report");
+            mockReport.Setup(r => r.GetData(mockRepository.Object, It.IsAny<ulong>())).Returns("report");
 
             IVKhandle vk = new VkHandle(mockRepository.Object, mockLogger.Object);
+            object report = vk.GetReportData(mockReport.Object, 12345);
 
-            object report = vk.GetReportData(mockReport.Object, userId);
-
+            mockReport.Verify(m => m.GetData(mockRepository.Object, 12345));
             Assert.AreEqual(report, "report");
         }
 
         [TestMethod]
         public void Test()
         {
+            var mockRepository = new Mock<IVkRepository>();
+            var mockReport = new Mock<IReport>();
+            mockReport.Setup(r => r.GetData(mockRepository.Object, It.IsAny<ulong>())).Returns("report");
+            var mockLogger = new Mock<ILogger>();
+            var mockVkHandle = new Mock<VkHandle>();
+
 
         }
     }    
