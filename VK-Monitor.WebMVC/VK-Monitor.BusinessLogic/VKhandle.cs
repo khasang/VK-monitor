@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Serilog;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -6,56 +7,29 @@ using System.Text;
 using System.Threading.Tasks;
 using VK_Monitor.BusinessLogic.Interfaces;
 using VK_Monitor.Domain.Entities;
+using VK_Monitor.Domain.Interfaces;
 using VkNet;
 using VkNet.Enums.Filters;
 using VkNet.Enums.SafetyEnums;
 
 namespace VK_Monitor.BusinessLogic
 {
-    public class VKhandle : IVKhandle
+    public class VkHandle : IVKhandle
     {
-        string adminId = string.Empty;
-        string adminPassword = string.Empty;
-        ulong applicationId;
-
-        VkApi vk;
+        IVkRepository vkRepository;
+        ILogger loggerService;
 
         List<ulong> targets = new List<ulong>();
 
-        public VKhandle(ulong applicationId, string adminId, string adminPassword)
+        public VkHandle(IVkRepository vkRepository, ILogger loggerService)
         {
-            this.applicationId = applicationId;
-            this.adminId = adminId;
-            this.adminPassword = adminPassword;
-
-            ApiAuthParams authorize = new ApiAuthParams()
-            {
-                ApplicationId = applicationId,
-                Login = adminId,
-                Password = adminPassword,
-                Settings = Settings.All
-            };
-
-            vk = new VkApi();
-
-            try
-            {
-                vk.Authorize(authorize);
-            }
-            catch(Exception ex)
-            {
-                Debug.WriteLine(ex.Message);
-            }           
-        }
-
-        public VkApi GetVK
-        {
-            get { return vk; }
+            this.vkRepository = vkRepository;
+            this.loggerService = loggerService;
         }
 
         public object GetReportData(IReport report, ulong targetUserId)
         {
-            return report.GetData(vk, targetUserId);
+            return report.GetData(vkRepository, targetUserId);
         }
 
         public void AddTarget(ulong userId)
@@ -67,6 +41,5 @@ namespace VK_Monitor.BusinessLogic
         {
             targets.Remove(userId);
         }
-
     }
 }

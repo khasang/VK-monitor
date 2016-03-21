@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using VkNet;
 
 namespace VK_Monitor.Domain.Interfaces
 {
-    public interface IReport
+    public interface IVkRepository
     {
-        object GetData(IVkRepository vkRepository, ulong userId);
+        void Authorize(ulong applicationId, string adminId, string adminPassword);
     }
 }

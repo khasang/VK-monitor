@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using VK_Monitor.BusinessLogic;
 using VkNet;
 using VK_Monitor.BusinessLogic.Interfaces;
+using VK_Monitor.Domain.Entities;
 
 namespace VK_Monitor.UnitTests
 {
@@ -12,9 +13,9 @@ namespace VK_Monitor.UnitTests
         [TestMethod]
         public void TestMethod1()
         {
-            IVKhandle vk = new VKhandle(34234, "adminId", "Password");
+            IVKhandle vk = new VkHandle(new FakeVkRepository(), new FakeLogger());
 
-            Assert.IsInstanceOfType(vk.GetVK, typeof(VkApi));
+            object report = vk.GetReportData(new Report1(), 12345);
         }
     }
 }

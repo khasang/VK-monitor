@@ -10,7 +10,7 @@ namespace VK_Monitor.Domain.Entities
 {
     public class Report1 : IReport
     {
-        public object GetData(VkApi vk, ulong userId)
+        public object GetData(IVkRepository vkRepository, ulong userId)
         {
             throw new NotImplementedException();
         }

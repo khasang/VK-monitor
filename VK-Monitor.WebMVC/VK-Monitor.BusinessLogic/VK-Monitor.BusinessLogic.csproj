@@ -46,6 +46,10 @@
       <HintPath>..\packages\Serilog.1.5.14\lib\net45\Serilog.FullNetFx.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Serilog.Sinks.Seq, Version=1.5.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\packages\Serilog.Sinks.Seq.1.5.36\lib\net45\Serilog.Sinks.Seq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -60,8 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\IVKhandle.cs" />
-    <Compile Include="VKhandle.cs" />
+    <Compile Include="VkHandle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VkRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

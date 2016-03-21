@@ -43,6 +43,14 @@
       <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Serilog, Version=1.5.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\packages\Serilog.1.5.14\lib\net45\Serilog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Serilog.FullNetFx, Version=1.5.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\packages\Serilog.1.5.14\lib\net45\Serilog.FullNetFx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="VkNet, Version=1.21.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\VkNet.1.21.0\lib\net40\VkNet.dll</HintPath>
@@ -62,6 +70,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="FakeLogger.cs" />
+    <Compile Include="FakeVkRepository.cs" />
     <Compile Include="UT_VKHandle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -69,6 +79,14 @@
     <ProjectReference Include="..\VK-Monitor.BusinessLogic\VK-Monitor.BusinessLogic.csproj">
       <Project>{8b7850eb-5e01-44f0-83ba-3fede287f5a8}</Project>
       <Name>VK-Monitor.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VK-Monitor.Domain\VK-Monitor.Domain.csproj">
+      <Project>{483bd8d1-9006-42c6-b9cb-a324c082f966}</Project>
+      <Name>VK-Monitor.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VK-Monitor.WebMVC\VK-Monitor.WebMVC.csproj">
+      <Project>{b8b05c4a-c6cf-4f85-985e-4afc981a17f8}</Project>
+      <Name>VK-Monitor.WebMVC</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
