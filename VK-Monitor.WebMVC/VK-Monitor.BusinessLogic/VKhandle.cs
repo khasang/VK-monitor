@@ -19,12 +19,14 @@ namespace VK_Monitor.BusinessLogic
         IVkRepository vkRepository;
         ILogger loggerService;
 
-        List<ulong> targets = new List<ulong>();
+        List<ulong> targets;
 
         public VkHandle(IVkRepository vkRepository, ILogger loggerService)
         {
             this.vkRepository = vkRepository;
             this.loggerService = loggerService;
+
+            targets = new List<ulong>();
         }
 
         public object GetReportData(IReport report, ulong targetUserId)
@@ -40,6 +42,11 @@ namespace VK_Monitor.BusinessLogic
         public void DeleteTarget(ulong userId)
         {
             targets.Remove(userId);
+        }
+        
+        public IList<ulong> GetTargets()
+        {
+            return targets;
         }
     }
 }

@@ -14,5 +14,6 @@ namespace VK_Monitor.BusinessLogic.Interfaces
         object GetReportData(IReport report, ulong targetUserId);
         void AddTarget(ulong userId);
         void DeleteTarget(ulong userId);
+        IList<ulong> GetTargets();
     }
 }
