@@ -14,21 +14,23 @@ namespace VK_Monitor.UnitTests
     [TestClass]
     public class UT_VKHandle
     {
-        [SetUp]
+        Mock<IVkRepository> mockRepository;
+        Mock<ILogger> mockLogger;
+        Mock<IReport> mockReport;
+
+        [TestInitialize()]
         public void Setup()
         {
-
+            mockRepository = new Mock<IVkRepository>();
+            mockLogger = new Mock<ILogger>();
+            mockReport = new Mock<IReport>();
+            mockReport.Setup(r => r.GetData(mockRepository.Object, It.IsAny<ulong>())).Returns("report");
         }
 
         [TestMethod]
         public void GetReportData_InteractionRepository_RightReport()
         {
-            var mockRepository = new Mock<IVkRepository>();
-            var mockLogger = new Mock<ILogger>();
-            var mockReport = new Mock<IReport>();
-            mockReport.Setup(r => r.GetData(mockRepository.Object, It.IsAny<ulong>())).Returns("report");
-
-            IVKhandle vk = new VkHandle(mockRepository.Object, mockLogger.Object);
+           IVKhandle vk = new VkHandle(mockRepository.Object, mockLogger.Object);
             object report = vk.GetReportData(mockReport.Object, 12345);
 
             mockReport.Verify(m => m.GetData(mockRepository.Object, 12345));
@@ -38,13 +40,7 @@ namespace VK_Monitor.UnitTests
         [TestMethod]
         public void Test()
         {
-            var mockRepository = new Mock<IVkRepository>();
-            var mockReport = new Mock<IReport>();
-            mockReport.Setup(r => r.GetData(mockRepository.Object, It.IsAny<ulong>())).Returns("report");
-            var mockLogger = new Mock<ILogger>();
-            var mockVkHandle = new Mock<VkHandle>();
-
-
+            
         }
     }    
 }
