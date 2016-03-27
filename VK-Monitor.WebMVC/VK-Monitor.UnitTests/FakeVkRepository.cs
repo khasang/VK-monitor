@@ -21,12 +21,18 @@ namespace VK_Monitor.UnitTests
             this.adminPassword = adminPassword;
         }
         
-        public Dictionary<string, IList<string>> Users(ulong userId)
+        public ReadOnlyCollection<long> GetLikesList(LikesGetListParams @params)
         {
             throw new NotImplementedException();
         }
-        
-        public ReadOnlyCollection<long> LikesGetList(LikesGetListParams @params)
+
+
+        public ReadOnlyCollection<VkNet.Model.User> GetUsers(IEnumerable<long> userIds, VkNet.Enums.Filters.ProfileFields fields = null, VkNet.Enums.SafetyEnums.NameCase nameCase = null)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ReadOnlyCollection<long> GetFriendsRecent(long? count = null)
         {
             throw new NotImplementedException();
         }

@@ -4,6 +4,9 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VkNet.Enums.Filters;
+using VkNet.Enums.SafetyEnums;
+using VkNet.Model;
 using VkNet.Model.RequestParams;
 
 namespace VK_Monitor.BusinessLogic.Interfaces
@@ -12,9 +15,11 @@ namespace VK_Monitor.BusinessLogic.Interfaces
     {
         void Authorize(ulong applicationId, string adminId, string adminPassword);
 
-        Dictionary<string, IList<string>> Users(ulong userId);
+        ReadOnlyCollection<User> GetUsers(IEnumerable<long> userIds, ProfileFields fields = null, NameCase nameCase = null);
 
-        ReadOnlyCollection<long> LikesGetList(LikesGetListParams @params);
+        ReadOnlyCollection<long> GetLikesList(LikesGetListParams @params);
+
+        ReadOnlyCollection<long> GetFriendsRecent(long? count = null);
 
     }
 }

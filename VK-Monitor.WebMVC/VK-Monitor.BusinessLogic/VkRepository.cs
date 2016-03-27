@@ -11,6 +11,7 @@ using Serilog.Configuration;
 using System.Collections.ObjectModel;
 using VkNet.Model.RequestParams;
 using VK_Monitor.BusinessLogic.Interfaces;
+using VkNet.Model;
 
 namespace VK_Monitor.BusinessLogic
 {
@@ -41,23 +42,20 @@ namespace VK_Monitor.BusinessLogic
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
-            }
-
-            
+            }                        
         }
 
-        public object Users(ulong userId)
+        public ReadOnlyCollection<long> GetLikesList(LikesGetListParams @params)
         {
             throw new NotImplementedException();
         }
-
-
-        Dictionary<string, IList<string>> IVkRepository.Users(ulong userId)
+        
+        public ReadOnlyCollection<long> GetFriendsRecent(long? count = null)
         {
-            throw new NotImplementedException();
+            return vk.Friends.GetRecent(count);
         }
 
-        public ReadOnlyCollection<long> LikesGetList(LikesGetListParams @params)
+        public ReadOnlyCollection<User> GetUsers(IEnumerable<long> userIds, ProfileFields fields = null, VkNet.Enums.SafetyEnums.NameCase nameCase = null)
         {
             throw new NotImplementedException();
         }
