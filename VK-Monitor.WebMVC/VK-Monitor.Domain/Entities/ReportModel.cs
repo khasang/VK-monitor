@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VK_Monitor.Domain
+namespace VK_Monitor.Domain.Entities
 {
-    public class Class1
+    public class ReportModel
     {
+        Dictionary<string, object> Answer { get; set; }
     }
 }

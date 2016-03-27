@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VK-Monitor.Domain", "VK-Mon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VK-Monitor.UnitTests", "VK-Monitor.UnitTests\VK-Monitor.UnitTests.csproj", "{2A85BA58-1E6E-4AFC-8691-ECBC8E57D229}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VK-Monitor.ConsoleUI", "VK-Monitor.ConsoleUI\VK-Monitor.ConsoleUI.csproj", "{9D4E2FE0-4985-4F94-ACF4-882F40E444D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{2A85BA58-1E6E-4AFC-8691-ECBC8E57D229}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A85BA58-1E6E-4AFC-8691-ECBC8E57D229}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A85BA58-1E6E-4AFC-8691-ECBC8E57D229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D4E2FE0-4985-4F94-ACF4-882F40E444D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D4E2FE0-4985-4F94-ACF4-882F40E444D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D4E2FE0-4985-4F94-ACF4-882F40E444D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D4E2FE0-4985-4F94-ACF4-882F40E444D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

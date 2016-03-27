@@ -63,14 +63,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="Interfaces\IReport.cs" />
-    <Compile Include="Entities\Report1.cs" />
-    <Compile Include="Entities\Report2.cs" />
-    <Compile Include="Interfaces\IVkRepository.cs" />
+    <Compile Include="Entities\ReportModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />

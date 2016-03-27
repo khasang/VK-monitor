@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
-using VK_Monitor.Domain.Interfaces;
+using VK_Monitor.BusinessLogic.Interfaces;
+using VkNet.Model.RequestParams;
 
 namespace VK_Monitor.UnitTests
 {
@@ -18,9 +20,13 @@ namespace VK_Monitor.UnitTests
             this.adminId = adminId;
             this.adminPassword = adminPassword;
         }
-
-
+        
         public Dictionary<string, IList<string>> Users(ulong userId)
+        {
+            throw new NotImplementedException();
+        }
+        
+        public ReadOnlyCollection<long> LikesGetList(LikesGetListParams @params)
         {
             throw new NotImplementedException();
         }

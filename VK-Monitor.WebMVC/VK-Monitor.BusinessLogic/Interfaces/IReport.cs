@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VK_Monitor.Domain.Entities;
 using VkNet;
 
-namespace VK_Monitor.Domain.Interfaces
+namespace VK_Monitor.BusinessLogic.Interfaces
 {
     public interface IReport
     {
-        object GetData(IVkRepository vkRepository, ulong userId);
+        ReportModel GetData(IVkRepository vkRepository, ulong userId);
     }
 }

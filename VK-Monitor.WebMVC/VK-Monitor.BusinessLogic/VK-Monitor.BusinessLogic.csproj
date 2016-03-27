@@ -63,7 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IReport.cs" />
     <Compile Include="Interfaces\IVKhandle.cs" />
+    <Compile Include="Interfaces\IVkRepository.cs" />
+    <Compile Include="Report1.cs" />
+    <Compile Include="Report2.cs" />
     <Compile Include="VkHandle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VkRepository.cs" />

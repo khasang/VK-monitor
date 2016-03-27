@@ -7,7 +7,6 @@ using System.Text;
 using System.Threading.Tasks;
 using VK_Monitor.BusinessLogic.Interfaces;
 using VK_Monitor.Domain.Entities;
-using VK_Monitor.Domain.Interfaces;
 using VkNet;
 using VkNet.Enums.Filters;
 using VkNet.Enums.SafetyEnums;
