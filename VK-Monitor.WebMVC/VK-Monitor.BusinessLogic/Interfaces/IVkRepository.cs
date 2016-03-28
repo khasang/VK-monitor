@@ -21,5 +21,7 @@ namespace VK_Monitor.BusinessLogic.Interfaces
 
         ReadOnlyCollection<long> GetFriendsRecent(long? count = null);
 
+        ReadOnlyCollection<User> GetFollowers(long? userId = null, int? count = null, int? offset = null, ProfileFields fields = null, NameCase nameCase = null);
+
     }
 }

@@ -36,5 +36,11 @@ namespace VK_Monitor.UnitTests
         {
             throw new NotImplementedException();
         }
+
+
+        public ReadOnlyCollection<VkNet.Model.User> GetFollowers(long? userId = null, int? count = null, int? offset = null, VkNet.Enums.Filters.ProfileFields fields = null, VkNet.Enums.SafetyEnums.NameCase nameCase = null)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

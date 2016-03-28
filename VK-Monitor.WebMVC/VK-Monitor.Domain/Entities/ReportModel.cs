@@ -8,6 +8,6 @@ namespace VK_Monitor.Domain.Entities
 {
     public class ReportModel
     {
-        Dictionary<string, object> Answer { get; set; }
+        public Dictionary<string, object> Answer { get; set; }
     }
 }

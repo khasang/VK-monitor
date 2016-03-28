@@ -25,7 +25,14 @@ namespace VK_Monitor.UnitTests
             mockRepository = new Mock<IVkRepository>();
             mockLogger = new Mock<ILogger>();
             mockReport = new Mock<IReport>();
-            mockReport.Setup(r => r.GetData(mockRepository.Object, It.IsAny<ulong>())).Returns(new ReportModel());
+
+            mockReport.Setup(r => r.GetData(mockRepository.Object, It.IsAny<ulong>()))
+                      .Returns(() =>
+                      {
+                          Dictionary<string, object> answer = new Dictionary<string, object>();
+                          answer.Add("Report", "any report");
+                          return new ReportModel { Answer = answer };
+                      });
 
             vk = new VkHandle(mockRepository.Object, mockLogger.Object);
             targetId = (ulong)12345;
@@ -34,10 +41,10 @@ namespace VK_Monitor.UnitTests
         [TestMethod]
         public void GetReportData_InteractionRepository_RightReport()
         {
-            object report = vk.GetReportData(mockReport.Object, 12345);
+            ReportModel report = vk.GetReportData(mockReport.Object, 12345);
 
             mockReport.Verify(m => m.GetData(mockRepository.Object, 12345));
-            Assert.AreEqual(report, "report");
+            Assert.AreEqual(report.Answer["Report"], "any report");
         }
 
         [TestMethod]

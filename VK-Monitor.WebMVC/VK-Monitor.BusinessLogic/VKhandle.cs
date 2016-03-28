@@ -28,7 +28,7 @@ namespace VK_Monitor.BusinessLogic
             targets = new List<ulong>();
         }
 
-        public object GetReportData(IReport report, ulong targetUserId)
+        public ReportModel GetReportData(IReport report, ulong targetUserId)
         {
             return report.GetData(vkRepository, targetUserId);
         }

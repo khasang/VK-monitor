@@ -76,6 +76,7 @@
   <ItemGroup>
     <Compile Include="FakeLogger.cs" />
     <Compile Include="FakeVkRepository.cs" />
+    <Compile Include="UT_Report3.cs" />
     <Compile Include="UT_VKHandle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -10,7 +10,7 @@ namespace VK_Monitor.BusinessLogic.Interfaces
 {
     public interface IVKhandle
     {
-        object GetReportData(IReport report, ulong targetUserId);
+        ReportModel GetReportData(IReport report, ulong targetUserId);
         void AddTarget(ulong userId);
         void DeleteTarget(ulong userId);
         IList<ulong> GetTargets();

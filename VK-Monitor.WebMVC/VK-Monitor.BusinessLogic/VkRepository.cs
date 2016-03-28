@@ -20,7 +20,7 @@ namespace VK_Monitor.BusinessLogic
         VkApi vk = new VkApi();
         ILogger loggerService;
 
-        public VkRepository(ILogger logerService)
+        public VkRepository(ILogger logerService = null)
         {
             this.loggerService = logerService;
         }
@@ -52,10 +52,31 @@ namespace VK_Monitor.BusinessLogic
         
         public ReadOnlyCollection<long> GetFriendsRecent(long? count = null)
         {
-            return vk.Friends.GetRecent(count);
+            ReadOnlyCollection<long> users = null;
+            try
+            {
+                users = vk.Friends.GetRecent(count);
+            }
+            catch
+            {
+                if(loggerService != null)
+                {
+                    loggerService.Error("Ошибка получения подписчиков: users {@0}, авторизация {@1} пользователем {@2}", users, vk.IsAuthorized, vk.UserId);
+                }
+
+                Debug.WriteLine("Ошибка получения подписчиков");
+            }
+
+            return users;
         }
 
         public ReadOnlyCollection<User> GetUsers(IEnumerable<long> userIds, ProfileFields fields = null, VkNet.Enums.SafetyEnums.NameCase nameCase = null)
+        {
+            throw new NotImplementedException();
+        }
+
+
+        public ReadOnlyCollection<User> GetFollowers(long? userId = null, int? count = null, int? offset = null, ProfileFields fields = null, VkNet.Enums.SafetyEnums.NameCase nameCase = null)
         {
             throw new NotImplementedException();
         }
