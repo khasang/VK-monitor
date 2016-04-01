@@ -111,6 +111,8 @@
     <Compile Include="DBInitializers\InitUserAdmin.cs" />
     <Compile Include="Entities\ApplicationUser.cs" />
     <Compile Include="Entities\ReportModel.cs" />
+    <Compile Include="Entities\Subscriber.cs" />
+    <Compile Include="Entities\TargetUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
