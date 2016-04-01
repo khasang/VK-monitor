@@ -89,9 +89,9 @@
       <Project>{483bd8d1-9006-42c6-b9cb-a324c082f966}</Project>
       <Name>VK-Monitor.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\VK-Monitor.WebMVC\VK-Monitor.WebMVC.csproj">
-      <Project>{b8b05c4a-c6cf-4f85-985e-4afc981a17f8}</Project>
-      <Name>VK-Monitor.WebMVC</Name>
+    <ProjectReference Include="..\VK-Monitor.WebUI\VK-Monitor.WebUI.csproj">
+      <Project>{4178a42e-ecfa-4d9b-85d1-533405c83bb1}</Project>
+      <Name>VK-Monitor.WebUI</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
