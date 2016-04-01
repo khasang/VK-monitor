@@ -12,7 +12,7 @@ namespace VK_Monitor.BusinessLogic
     {
         public ReportModel GetData(IVkRepository vkRepository, ulong userId)
         {
-            vkRepository.GetFriendsRecent(userId as long?);
+            return null;//vkRepository.GetFriendsRecent(userId as long?);
         }
     }
 }
