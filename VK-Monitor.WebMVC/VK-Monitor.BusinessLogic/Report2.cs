@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using VK_Monitor.BusinessLogic.Interfaces;
 using VK_Monitor.Domain.Entities;
+using VK_Monitor.Domain.Models;
 using VkNet;
 
 namespace VK_Monitor.BusinessLogic

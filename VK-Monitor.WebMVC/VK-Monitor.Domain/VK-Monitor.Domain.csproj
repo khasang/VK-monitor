@@ -105,20 +105,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
+    <Compile Include="DataManager.cs" />
     <Compile Include="DBInitializer.cs" />
     <Compile Include="DBInitializers\DBInitialization.cs" />
     <Compile Include="DBInitializers\InitializationAbstract.cs" />
     <Compile Include="DBInitializers\InitUserAdmin.cs" />
     <Compile Include="Entities\ApplicationUser.cs" />
-    <Compile Include="Entities\ReportModel.cs" />
+    <Compile Include="Implementaions\EFSubscriberRepository.cs" />
+    <Compile Include="Implementaions\EFTargetUserRepository.cs" />
+    <Compile Include="Interfaces\IApplicationUser.cs" />
+    <Compile Include="Models\ReportModel.cs" />
     <Compile Include="Entities\Subscriber.cs" />
     <Compile Include="Entities\TargetUser.cs" />
+    <Compile Include="Interfaces\IDataManager.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Interfaces\ISubscriberRepository.cs" />
+    <Compile Include="Interfaces\ITargetUserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="EntityConfigurations\" />
-    <Folder Include="Implementaions\" />
-    <Folder Include="Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">

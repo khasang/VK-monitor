@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VK_Monitor.Domain.Entities
+namespace VK_Monitor.Domain.Models
 {
     public class ReportModel
     {

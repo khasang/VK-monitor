@@ -7,6 +7,7 @@ using VK_Monitor.Domain.Entities;
 using Moq;
 using System.Collections.Generic;
 using Serilog;
+using VK_Monitor.Domain.Models;
 
 namespace VK_Monitor.UnitTests
 {
