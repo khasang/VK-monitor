@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,27 +20,34 @@ namespace VK_Monitor.Domain.Implementaions
 
         public IEnumerable<TargetUser> GetAll()
         {
-            throw new NotImplementedException();
+            return dbContext.TargetUsers;
         }
 
         public TargetUser GetById(int id)
         {
-            throw new NotImplementedException();
+            return dbContext.TargetUsers.Find(id);
         }
 
-        public void Add(TargetUser item)
+        public void Add(TargetUser targetUser)
         {
-            throw new NotImplementedException();
+            dbContext.TargetUsers.Add(targetUser);
         }
 
-        public void Update(TargetUser item)
+        public void Update(TargetUser targetUser)
         {
-            throw new NotImplementedException();
+            dbContext.Entry(targetUser).State = EntityState.Modified;
         }
 
-        public void Delete(TargetUser item)
+        public void Delete(TargetUser targetUser)
         {
-            throw new NotImplementedException();
+            Delete(targetUser.Id);
+        }
+
+        public void Delete(int id)
+        {
+            TargetUser targetUser = GetById(id);
+            if (targetUser != null)
+                dbContext.TargetUsers.Remove(targetUser);
         }
     }
 }
