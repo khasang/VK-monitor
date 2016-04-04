@@ -28,7 +28,8 @@ namespace VK_Monitor.WebUI.Infrastructure
             kernel.Bind<IDataManager>().To<DataManager>();
             kernel.Bind<ISubscriberRepository>().To<EFSubscriberRepository>();
             kernel.Bind<ITargetUserRepository>().To<EFTargetUserRepository>();
-            kernel.Bind<ApplicationDbContext>().ToSelf();
+            kernel.Bind<IApplicationDbContext>().To<ApplicationDbContext>();
+            //kernel.Bind<ApplicationDbContext>().ToSelf();
         }
         public object GetService(Type serviceType)
         {

@@ -6,14 +6,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using VK_Monitor.Domain.Entities;
+using VK_Monitor.Domain.Interfaces;
 
 namespace VK_Monitor.Domain
 {
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>, IApplicationDbContext
     {
         public DbSet<TargetUser> TargetUsers { get; set; }
         public DbSet<Subscriber> Subscribers { get; set; }
 
+        public IDbSet<ApplicationUser> GetUsers { get { return base.Users; } }
+        public IDbSet<IdentityRole> GetRoles { get { return base.Roles; } }
+ 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
@@ -27,6 +31,16 @@ namespace VK_Monitor.Domain
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
+        }
+
+        public void SaveChanges()
+        {
+            base.SaveChanges();
+        }
+
+        public void Dispose()
+        {
+            base.Dispose();
         }
     }
 }

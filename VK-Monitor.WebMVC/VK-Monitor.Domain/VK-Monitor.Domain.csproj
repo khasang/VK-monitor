@@ -113,7 +113,7 @@
     <Compile Include="Entities\ApplicationUser.cs" />
     <Compile Include="Implementaions\EFSubscriberRepository.cs" />
     <Compile Include="Implementaions\EFTargetUserRepository.cs" />
-    <Compile Include="Interfaces\IApplicationUser.cs" />
+    <Compile Include="Interfaces\IApplicationDbContext.cs" />
     <Compile Include="Models\ReportModel.cs" />
     <Compile Include="Entities\Subscriber.cs" />
     <Compile Include="Entities\TargetUser.cs" />

@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VK_Monitor.Domain.Entities;
 using VK_Monitor.Domain.Implementaions;
 using VK_Monitor.Domain.Interfaces;
 
@@ -10,18 +13,20 @@ namespace VK_Monitor.Domain
 {
     public class DataManager : IDataManager
     {
-        ApplicationDbContext dbContext;
+        IApplicationDbContext dbContext;
 
         ISubscriberRepository subscriber;
         ITargetUserRepository targetUser;
 
-        public DataManager(ApplicationDbContext dbContext,
+        public DataManager(IApplicationDbContext dbContext,
                            ITargetUserRepository targetUser,
                            ISubscriberRepository subscriber)
         {            
             this.targetUser = targetUser;
             this.subscriber = subscriber;
 
+            if (dbContext == null)
+                throw new NullReferenceException("ApplicationDbContext равен NULL");
             this.dbContext = dbContext;
         }
 
@@ -44,6 +49,22 @@ namespace VK_Monitor.Domain
                     throw new NullReferenceException("TargetUsers равен NULL");
 
                 return targetUser;
+            }
+        }
+
+        public IDbSet<ApplicationUser> Users
+        {
+            get
+            {
+                return dbContext.GetUsers;
+            }
+        }
+
+        public IDbSet<IdentityRole> Roles
+        {
+            get
+            {
+                return dbContext.GetRoles;
             }
         }
         

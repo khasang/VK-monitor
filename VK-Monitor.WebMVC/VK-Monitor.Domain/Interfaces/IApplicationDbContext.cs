@@ -9,14 +9,15 @@ using VK_Monitor.Domain.Entities;
 
 namespace VK_Monitor.Domain.Interfaces
 {
-    public interface IDataManager : IDisposable
+    public interface IApplicationDbContext
     {
-        ITargetUserRepository TargetUsers { get; }
-        ISubscriberRepository Subscribers { get; }
-        IDbSet<ApplicationUser> Users { get; }
-        IDbSet<IdentityRole> Roles { get; }
+        DbSet<TargetUser> TargetUsers { get; set; }
+        DbSet<Subscriber> Subscribers { get; set; }
 
-        void Save();
+        IDbSet<ApplicationUser> GetUsers { get; }
+        IDbSet<IdentityRole> GetRoles { get; }
+
+        void SaveChanges();
         void Dispose();
     }
 }
