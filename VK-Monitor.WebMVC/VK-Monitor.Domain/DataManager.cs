@@ -8,21 +8,21 @@ using VK_Monitor.Domain.Interfaces;
 
 namespace VK_Monitor.Domain
 {
-    public class DataManager : IDataManager, IDisposable
+    public class DataManager : IDataManager
     {
         ApplicationDbContext dbContext;
 
         ISubscriberRepository subscriber;
         ITargetUserRepository targetUser;
 
-        public DataManager()
-        {
-            dbContext = new ApplicationDbContext();
-        }
+        public DataManager(ApplicationDbContext dbContext,
+                           ITargetUserRepository targetUser,
+                           ISubscriberRepository subscriber)
+        {            
+            this.targetUser = targetUser;
+            this.subscriber = subscriber;
 
-        public DataManager(string connectionString)
-        {
-            dbContext = new ApplicationDbContext(connectionString);
+            this.dbContext = dbContext;
         }
 
         public ISubscriberRepository Subscribers
@@ -30,7 +30,8 @@ namespace VK_Monitor.Domain
             get
             {
                 if (subscriber == null)
-                    subscriber = new EFSubscriberRepository(dbContext);
+                    throw new NullReferenceException("Subscribers равен NULL");
+
                 return subscriber;
             }
         }
@@ -40,7 +41,8 @@ namespace VK_Monitor.Domain
             get
             {
                 if (targetUser == null)
-                    targetUser = new EFTargetUserRepository(dbContext);
+                    throw new NullReferenceException("TargetUsers равен NULL");
+
                 return targetUser;
             }
         }

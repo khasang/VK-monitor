@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using VK_Monitor.Domain;
+using VK_Monitor.Domain.Implementaions;
+using VK_Monitor.Domain.Interfaces;
 
 namespace VK_Monitor.WebUI.Infrastructure
 {
@@ -22,6 +25,10 @@ namespace VK_Monitor.WebUI.Infrastructure
         {
             // Здесь мапим зависимости
             // kernel.Bind<IOurInterface>().To<OurClass>();
+            kernel.Bind<IDataManager>().To<DataManager>();
+            kernel.Bind<ISubscriberRepository>().To<EFSubscriberRepository>();
+            kernel.Bind<ITargetUserRepository>().To<EFTargetUserRepository>();
+            kernel.Bind<ApplicationDbContext>().ToSelf();
         }
         public object GetService(Type serviceType)
         {

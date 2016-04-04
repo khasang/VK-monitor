@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VK_Monitor.Domain.Interfaces
 {
-    public interface IDataManager
+    public interface IDataManager : IDisposable
     {
         ITargetUserRepository TargetUsers { get; }
         ISubscriberRepository Subscribers { get; }
