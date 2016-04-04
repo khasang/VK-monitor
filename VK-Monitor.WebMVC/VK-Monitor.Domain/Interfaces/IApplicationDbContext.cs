@@ -14,8 +14,8 @@ namespace VK_Monitor.Domain.Interfaces
         DbSet<TargetUser> TargetUsers { get; set; }
         DbSet<Subscriber> Subscribers { get; set; }
 
-        IDbSet<ApplicationUser> GetUsers { get; }
-        IDbSet<IdentityRole> GetRoles { get; }
+        IDbSet<ApplicationUser> GetUsers();
+        IDbSet<IdentityRole> GetRoles();
 
         void SaveChanges();
         void Dispose();

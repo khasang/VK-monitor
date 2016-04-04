@@ -15,8 +15,8 @@ namespace VK_Monitor.Domain
         public DbSet<TargetUser> TargetUsers { get; set; }
         public DbSet<Subscriber> Subscribers { get; set; }
 
-        public IDbSet<ApplicationUser> GetUsers { get { return base.Users; } }
-        public IDbSet<IdentityRole> GetRoles { get { return base.Roles; } }
+        public IDbSet<ApplicationUser> GetUsers() { return base.Users; }
+        public IDbSet<IdentityRole> GetRoles() { return base.Roles; } 
  
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)

@@ -17,6 +17,5 @@ namespace VK_Monitor.Domain.Interfaces
         IDbSet<IdentityRole> Roles { get; }
 
         void Save();
-        void Dispose();
     }
 }

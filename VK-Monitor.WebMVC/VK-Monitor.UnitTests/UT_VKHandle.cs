@@ -53,7 +53,6 @@ namespace VK_Monitor.UnitTests
         {
             ulong targetId = (ulong)12345;
 
-            Assert.IsFalse(vk.GetTargets().Contains(targetId));
             vk.AddTarget(targetId);
             Assert.IsTrue(vk.GetTargets().Contains(targetId));
         }
@@ -63,7 +62,6 @@ namespace VK_Monitor.UnitTests
         {
             vk.AddTarget(targetId);
 
-            Assert.IsTrue(vk.GetTargets().Contains(targetId));
             vk.DeleteTarget(targetId);
             Assert.IsFalse(vk.GetTargets().Contains(targetId));
         }

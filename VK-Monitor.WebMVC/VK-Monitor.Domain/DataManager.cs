@@ -56,7 +56,7 @@ namespace VK_Monitor.Domain
         {
             get
             {
-                return dbContext.GetUsers;
+                return dbContext.GetUsers();
             }
         }
 
@@ -64,7 +64,7 @@ namespace VK_Monitor.Domain
         {
             get
             {
-                return dbContext.GetRoles;
+                return dbContext.GetRoles();
             }
         }
         
