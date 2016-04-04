@@ -8,7 +8,7 @@ using VkNet.Model.RequestParams;
 
 namespace VK_Monitor.UnitTests
 {
-    public class FakeVkRepository : IVkRepository
+    public class FakeVkRepository : IVkService
     {
         ulong applicationId;
         string adminId;

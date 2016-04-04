@@ -11,9 +11,9 @@ namespace VK_Monitor.BusinessLogic
 {
     public class Report3 : IReport
     {
-        public ReportModel GetData(IVkRepository vkRepository, ulong userId)
+        public ReportModel GetData(IVkService vkRepository, ulong userId)
         {
-            return null;//vkRepository.GetFriendsRecent(userId as long?);
+            return new ReportModel();
         }
     }
 }

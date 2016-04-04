@@ -12,7 +12,7 @@ namespace VK_Monitor.BusinessLogic
 {
     public class Report1 : IReport
     {
-        public ReportModel GetData(IVkRepository vkRepository, ulong userId)
+        public ReportModel GetData(IVkService vkRepository, ulong userId)
         {
             throw new NotImplementedException();
         }

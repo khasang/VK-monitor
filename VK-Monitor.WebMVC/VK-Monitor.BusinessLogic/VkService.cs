@@ -15,12 +15,12 @@ using VkNet.Model;
 
 namespace VK_Monitor.BusinessLogic
 {
-    public class VkRepository : IVkRepository
+    public class VkService : IVkService
     {
         VkApi vk = new VkApi();
         ILogger loggerService;
 
-        public VkRepository(ILogger logerService = null)
+        public VkService(ILogger logerService = null)
         {
             this.loggerService = logerService;
         }

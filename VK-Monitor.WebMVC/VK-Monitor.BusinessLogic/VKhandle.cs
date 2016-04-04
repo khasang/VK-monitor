@@ -16,12 +16,12 @@ namespace VK_Monitor.BusinessLogic
 {
     public class VkHandle : IVKhandle
     {
-        IVkRepository vkRepository;
+        IVkService vkRepository;
         ILogger loggerService;
 
         List<ulong> targets;
 
-        public VkHandle(IVkRepository vkRepository, ILogger loggerService)
+        public VkHandle(IVkService vkRepository, ILogger loggerService)
         {
             this.vkRepository = vkRepository;
             this.loggerService = loggerService;

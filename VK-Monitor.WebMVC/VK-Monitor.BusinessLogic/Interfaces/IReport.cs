@@ -11,6 +11,6 @@ namespace VK_Monitor.BusinessLogic.Interfaces
 {
     public interface IReport
     {
-        ReportModel GetData(IVkRepository vkRepository, ulong userId);
+        ReportModel GetData(IVkService vkRepository, ulong userId);
     }
 }

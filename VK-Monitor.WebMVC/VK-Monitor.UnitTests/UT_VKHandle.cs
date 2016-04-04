@@ -14,7 +14,7 @@ namespace VK_Monitor.UnitTests
     [TestClass]
     public class UT_VKHandle
     {
-        Mock<IVkRepository> mockRepository;
+        Mock<IVkService> mockRepository;
         Mock<ILogger> mockLogger;
         Mock<IReport> mockReport;
         IVKhandle vk;
@@ -23,7 +23,7 @@ namespace VK_Monitor.UnitTests
         [TestInitialize()]
         public void Setup()
         {
-            mockRepository = new Mock<IVkRepository>();
+            mockRepository = new Mock<IVkService>();
             mockLogger = new Mock<ILogger>();
             mockReport = new Mock<IReport>();
 

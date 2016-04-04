@@ -20,7 +20,7 @@ namespace VK_Monitor.ConsoleUI
                 // есть возможность писать Verbose уровень в текстовый файл, а например, Error в Windows Event Logs
              .CreateLogger();
 
-            IVkRepository vkRepository = new VkRepository(logerService);
+            IVkService vkRepository = new VkService(logerService);
 
         }
     }

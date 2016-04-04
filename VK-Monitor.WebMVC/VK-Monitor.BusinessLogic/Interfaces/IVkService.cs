@@ -11,7 +11,7 @@ using VkNet.Model.RequestParams;
 
 namespace VK_Monitor.BusinessLogic.Interfaces
 {
-    public interface IVkRepository
+    public interface IVkService
     {
         void Authorize(ulong applicationId, string adminId, string adminPassword);
 
