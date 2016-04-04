@@ -75,7 +75,6 @@ namespace VK_Monitor.BusinessLogic
             throw new NotImplementedException();
         }
 
-
         public ReadOnlyCollection<User> GetFollowers(long? userId = null, int? count = null, int? offset = null, ProfileFields fields = null, VkNet.Enums.SafetyEnums.NameCase nameCase = null)
         {
             throw new NotImplementedException();
