@@ -11,7 +11,7 @@ namespace VK_Monitor.BusinessLogic
 {
     public class Report3 : IReport
     {
-        public ReportModel GetData(IVkService vkRepository, ulong userId)
+        public ReportModel GetData(IVkService vkService, ulong userId)
         {
             return new ReportModel();
         }
