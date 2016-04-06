@@ -26,7 +26,7 @@ namespace VK_Monitor.BusinessLogic
         
         public static bool TurnOn { get; set; }
 
-        void Debug(string message, params object[] property)
+        public static void Debug(string message, params object[] property)
         {
             if(TurnOn == true )
             {
@@ -34,7 +34,7 @@ namespace VK_Monitor.BusinessLogic
             }            
         }
 
-        void Error(string message, params object[] property)
+        public static void Error(string message, params object[] property)
         {
             if (TurnOn == true)
             {
@@ -42,7 +42,7 @@ namespace VK_Monitor.BusinessLogic
             }            
         }
 
-        void Warning(string message, params object[] property)
+        public static void Warning(string message, params object[] property)
         {
             if (TurnOn == true)
             {
@@ -50,7 +50,7 @@ namespace VK_Monitor.BusinessLogic
             }            
         }
 
-        void Information(string message, params object[] property)
+        public static void Information(string message, params object[] property)
         {
             if (TurnOn == true)
             {

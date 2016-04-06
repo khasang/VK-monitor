@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using VK_Monitor.BusinessLogic;
 using VK_Monitor.BusinessLogic.Interfaces;
+using VK_Monitor.Domain;
+using VK_Monitor.Domain.Interfaces;
 
 namespace VK_Monitor.ConsoleUI
 {
@@ -13,14 +15,9 @@ namespace VK_Monitor.ConsoleUI
     {
         static void Main(string[] args)
         {
-            var logerService = new LoggerConfiguration()
-             .MinimumLevel.Verbose()     // ставим минимальный уровень в Verbose для теста, по умолчанию стоит Information
-             .WriteTo.RollingFile(@"C:\Logs\Log-{Date}.txt") // а также пишем лог файл, разбивая его по дате
-             .WriteTo.Seq("http://localhost:5341")
-                // есть возможность писать Verbose уровень в текстовый файл, а например, Error в Windows Event Logs
-             .CreateLogger();
+            //public IDataManager dataManager { get; set; }
 
-            IVkService vkRepository = new VkService(logerService);
+            IVkService vkRepository = new VkService();
 
         }
     }
