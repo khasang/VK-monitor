@@ -6,11 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using VK_Monitor.Domain;
+using VK_Monitor.Domain.Interfaces;
 
 namespace VK_Monitor.Domain.DBInitializers
 {
-    abstract public class InitializationAbstract
+    public interface IInitialization
     {
-        public abstract void Initialization(ApplicationDbContext context);
+        void Initialization(ApplicationDbContext context);
     }
 }

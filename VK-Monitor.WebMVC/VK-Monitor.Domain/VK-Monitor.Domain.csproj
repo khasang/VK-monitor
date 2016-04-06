@@ -108,7 +108,7 @@
     <Compile Include="DataManager.cs" />
     <Compile Include="DBInitializer.cs" />
     <Compile Include="DBInitializers\DBInitialization.cs" />
-    <Compile Include="DBInitializers\InitializationAbstract.cs" />
+    <Compile Include="DBInitializers\IInitialization.cs" />
     <Compile Include="DBInitializers\InitUserAdmin.cs" />
     <Compile Include="Entities\ApplicationUser.cs" />
     <Compile Include="Implementaions\EFSubscriberRepository.cs" />

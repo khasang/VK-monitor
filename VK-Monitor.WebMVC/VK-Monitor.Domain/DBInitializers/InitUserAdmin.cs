@@ -7,15 +7,16 @@ using System.Text;
 using System.Threading.Tasks;
 using VK_Monitor.Domain;
 using VK_Monitor.Domain.Entities;
+using VK_Monitor.Domain.Interfaces;
 
 namespace VK_Monitor.Domain.DBInitializers
 {
-    class InitUserAdmin : InitializationAbstract
+    public class InitUserAdmin : IInitialization
     {
-        override public void Initialization(ApplicationDbContext context)
+        public void Initialization(ApplicationDbContext dbContext)
         {
-            UserManager<ApplicationUser> userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
-            RoleManager<IdentityRole> roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
+            UserManager<ApplicationUser> userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(dbContext));
+            RoleManager<IdentityRole> roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(dbContext));
 
             ApplicationUser user = new ApplicationUser()
             {

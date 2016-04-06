@@ -12,6 +12,7 @@ using System.Collections.ObjectModel;
 using VkNet.Model.RequestParams;
 using VK_Monitor.BusinessLogic.Interfaces;
 using VkNet.Model;
+using VkNet.Enums.SafetyEnums;
 
 namespace VK_Monitor.BusinessLogic
 {
@@ -70,12 +71,12 @@ namespace VK_Monitor.BusinessLogic
             return users;
         }
 
-        public ReadOnlyCollection<User> GetUsers(IEnumerable<long> userIds, ProfileFields fields = null, VkNet.Enums.SafetyEnums.NameCase nameCase = null)
+        public ReadOnlyCollection<User> GetUsers(IEnumerable<long> userIds, ProfileFields fields = null, NameCase nameCase = null)
         {
             throw new NotImplementedException();
         }
 
-        public ReadOnlyCollection<User> GetFollowers(long? userId = null, int? count = null, int? offset = null, ProfileFields fields = null, VkNet.Enums.SafetyEnums.NameCase nameCase = null)
+        public ReadOnlyCollection<User> GetFollowers(long? userId = null, int? count = null, int? offset = null, ProfileFields fields = null, NameCase nameCase = null)
         {
             throw new NotImplementedException();
         }

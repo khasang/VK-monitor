@@ -5,20 +5,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using VK_Monitor.Domain;
+using VK_Monitor.Domain.Interfaces;
 
 namespace VK_Monitor.Domain.DBInitializers
 {
     public class DBInitialization
     {
-        List<InitializationAbstract> methods = new List<InitializationAbstract>();
+        List<IInitialization> methods;
         ApplicationDbContext context;
 
         public DBInitialization(ApplicationDbContext context)
         {
             this.context = context;
+            this.methods = new List<IInitialization>();
         }
 
-        public void Add(InitializationAbstract initObject)
+        public void Add(IInitialization initObject)
         {
             methods.Add(initObject);
         }

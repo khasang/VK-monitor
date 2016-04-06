@@ -15,11 +15,11 @@ namespace VK_Monitor.Domain
     {
         private Random rnd = new Random();
 
-        protected override void Seed(ApplicationDbContext context)
+        protected override void Seed(ApplicationDbContext dbContext)
         {
             // Здесь инициализируем БД
 
-            DBInitialization initialization = new DBInitialization(context);
+            DBInitialization initialization = new DBInitialization(dbContext);
 
             // Здесь добавляем созданные нами объекты, наследованные от InitializationDB, для инициализации БД
             // Пример DBInitilizers.InitUserAdmin
