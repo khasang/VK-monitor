@@ -16,26 +16,12 @@ namespace VK_Monitor.CrawlerConsole
         {
             IKernel kernel = new StandardKernel(new CrowlerModule());
 
-            IVkService vkService = kernel.Get<IVkService>();
             IDataManager dataManager = kernel.Get<IDataManager>();
+            IVkService vkService = kernel.Get<IVkService>();
 
-            var users = dataManager.Users.ToList();
-            var targetUsers = dataManager.TargetUsers.GetAll();
+            Work work = new Work(dataManager, vkService);
 
-            foreach (var target in targetUsers)
-            {
-                var subscribersBefor = target.Subscribers.ToList();
-                var subscribersNew = vkService.GetSubscribers(target.VkId)
-                                              .Where(n => subscribersBefor.FirstOrDefault(b => b.VkId == n.Id) == null)
-                                              .Select(n => new Subscriber { VkId = n.Id, Date = DateTime.Now, Owner = target });
-
-                foreach (var subscrber in subscribersNew)
-                {
-                    dataManager.Subscribers.Add(subscrber);
-                }                
-            }
-
-            dataManager.Save();
+            work.AddNewSubscriber();
         }
     }
 }
