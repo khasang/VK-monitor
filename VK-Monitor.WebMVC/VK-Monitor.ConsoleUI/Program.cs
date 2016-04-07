@@ -1,4 +1,5 @@
-﻿using Serilog;
+﻿using Ninject;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +8,7 @@ using System.Threading.Tasks;
 using VK_Monitor.BusinessLogic;
 using VK_Monitor.BusinessLogic.Interfaces;
 using VK_Monitor.Domain;
+using VK_Monitor.Domain.Implementaions;
 using VK_Monitor.Domain.Interfaces;
 
 namespace VK_Monitor.ConsoleUI
@@ -15,10 +17,16 @@ namespace VK_Monitor.ConsoleUI
     {
         static void Main(string[] args)
         {
-            //public IDataManager dataManager { get; set; }
+            //IKernel kernel = new StandardKernel(new CrowlerModule());
 
-            IVkService vkRepository = new VkService();
+            //IVkService vkService = kernel.Get<IVkService>();
+            //IDataManager dataManager = kernel.Get<IDataManager>();
 
+            //var targetUsers = dataManager.TargetUsers.GetAll();
+            //foreach (var user in targetUsers)
+            //{
+            //    var subscriber = vkService.GetSubscribers(user.VkId);
+            //}
         }
     }
 }

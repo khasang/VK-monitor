@@ -49,5 +49,10 @@ namespace VK_Monitor.Domain.Implementaions
             if (subscriber != null)
                 dbContext.Subscribers.Remove(subscriber);
         }
+
+        public IEnumerable<Subscriber> GetByOwnerId(long vkId)
+        {
+            return dbContext.Subscribers.Where(s => s.OwnerId == vkId);
+        }
     }
 }

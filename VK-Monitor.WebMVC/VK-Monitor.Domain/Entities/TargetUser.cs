@@ -9,6 +9,7 @@ namespace VK_Monitor.Domain.Entities
     public class TargetUser
     {
         public int Id { get; set; }
+
         public long VkId { get; set; }
         public DateTime Date { get; set; }
 

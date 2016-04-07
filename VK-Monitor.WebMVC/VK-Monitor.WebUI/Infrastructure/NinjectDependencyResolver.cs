@@ -23,8 +23,6 @@ namespace VK_Monitor.WebUI.Infrastructure
 
         private void AddBindings()
         {
-            // Здесь мапим зависимости
-            // kernel.Bind<IOurInterface>().To<OurClass>();
             kernel.Bind<IDataManager>().To<DataManager>();
             kernel.Bind<ISubscriberRepository>().To<EFSubscriberRepository>();
             kernel.Bind<ITargetUserRepository>().To<EFTargetUserRepository>();

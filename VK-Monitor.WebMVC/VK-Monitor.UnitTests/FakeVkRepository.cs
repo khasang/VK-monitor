@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using VK_Monitor.BusinessLogic.Interfaces;
+using VkNet.Model;
 using VkNet.Model.RequestParams;
 
 namespace VK_Monitor.UnitTests
@@ -26,8 +27,7 @@ namespace VK_Monitor.UnitTests
             throw new NotImplementedException();
         }
 
-
-        public ReadOnlyCollection<VkNet.Model.User> GetUsers(IEnumerable<long> userIds, VkNet.Enums.Filters.ProfileFields fields = null, VkNet.Enums.SafetyEnums.NameCase nameCase = null)
+        public ReadOnlyCollection<User> GetUsers(IEnumerable<long> userIds, VkNet.Enums.Filters.ProfileFields fields = null, VkNet.Enums.SafetyEnums.NameCase nameCase = null)
         {
             throw new NotImplementedException();
         }
@@ -38,7 +38,13 @@ namespace VK_Monitor.UnitTests
         }
 
 
-        public ReadOnlyCollection<VkNet.Model.User> GetFollowers(long? userId = null, int? count = null, int? offset = null, VkNet.Enums.Filters.ProfileFields fields = null, VkNet.Enums.SafetyEnums.NameCase nameCase = null)
+        public ReadOnlyCollection<User> GetFollowers(long? userId = null, int? count = null, int? offset = null, VkNet.Enums.Filters.ProfileFields fields = null, VkNet.Enums.SafetyEnums.NameCase nameCase = null)
+        {
+            throw new NotImplementedException();
+        }
+
+
+        public ReadOnlyCollection<User> GetSubscribers(long userId)
         {
             throw new NotImplementedException();
         }

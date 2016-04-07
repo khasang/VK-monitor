@@ -19,11 +19,10 @@ namespace VK_Monitor.BusinessLogic
     public class VkService : IVkService
     {
         VkApi vk = new VkApi();
-        ILogger loggerService;
 
-        public VkService(ILogger logerService = null)
+        public VkService()
         {
-            this.loggerService = logerService;
+            
         }
 
         public void Authorize(ulong applicationId, string adminId, string adminPassword)
@@ -60,11 +59,7 @@ namespace VK_Monitor.BusinessLogic
             }
             catch
             {
-                if(loggerService != null)
-                {
-                    loggerService.Error("Ошибка получения подписчиков: users {@0}, авторизация {@1} пользователем {@2}", users, vk.IsAuthorized, vk.UserId);
-                }
-
+                Logger.Error("Ошибка получения подписчиков: users {@0}, авторизация {@1} пользователем {@2}", users, vk.IsAuthorized, vk.UserId);                
                 Debug.WriteLine("Ошибка получения подписчиков");
             }
 
@@ -77,6 +72,12 @@ namespace VK_Monitor.BusinessLogic
         }
 
         public ReadOnlyCollection<User> GetFollowers(long? userId = null, int? count = null, int? offset = null, ProfileFields fields = null, NameCase nameCase = null)
+        {
+            throw new NotImplementedException();
+        }
+
+
+        public ReadOnlyCollection<User> GetSubscribers(long userId)
         {
             throw new NotImplementedException();
         }
