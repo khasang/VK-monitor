@@ -74,9 +74,11 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="FakeClasses\FakeDataManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="FakeClasses\FakeLogger.cs" />
     <Compile Include="FakeClasses\FakeVkService.cs" />
-    <Compile Include="FakeClasses\FakeDataManager.cs" />
     <Compile Include="UT_Work.cs" />
     <Compile Include="UT_Report3.cs" />
     <Compile Include="UT_VkHandle.cs" />
