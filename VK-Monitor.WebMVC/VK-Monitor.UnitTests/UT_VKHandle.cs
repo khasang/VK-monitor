@@ -12,9 +12,9 @@ using VK_Monitor.Domain.Models;
 namespace VK_Monitor.UnitTests
 {
     [TestClass]
-    public class UT_VKHandle
+    public class UT_VkHandle
     {
-        Mock<IVkService> mockRepository;
+        Mock<IVkService> mockVkService;
         Mock<ILogger> mockLogger;
         Mock<IReport> mockReport;
         IVKhandle vk;
@@ -23,11 +23,11 @@ namespace VK_Monitor.UnitTests
         [TestInitialize()]
         public void Setup()
         {
-            mockRepository = new Mock<IVkService>();
+            mockVkService = new Mock<IVkService>();
             mockLogger = new Mock<ILogger>();
             mockReport = new Mock<IReport>();
 
-            mockReport.Setup(r => r.GetData(mockRepository.Object, It.IsAny<ulong>()))
+            mockReport.Setup(r => r.GetData(mockVkService.Object, It.IsAny<ulong>()))
                       .Returns(() =>
                       {
                           Dictionary<string, object> answer = new Dictionary<string, object>();
@@ -35,7 +35,7 @@ namespace VK_Monitor.UnitTests
                           return new ReportModel { Answer = answer };
                       });
 
-            vk = new VkHandle(mockRepository.Object, mockLogger.Object);
+            vk = new VkHandle(mockVkService.Object);
             targetId = (ulong)12345;
         }
 
@@ -44,7 +44,7 @@ namespace VK_Monitor.UnitTests
         {
             ReportModel report = vk.GetReportData(mockReport.Object, 12345);
 
-            mockReport.Verify(m => m.GetData(mockRepository.Object, 12345));
+            mockReport.Verify(m => m.GetData(mockVkService.Object, 12345));
             Assert.AreEqual(report.Answer["Report"], "any report");
         }
 

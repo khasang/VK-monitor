@@ -50,6 +50,7 @@ namespace VK_Monitor.BusinessLogic
             throw new NotImplementedException();
         }
         
+        // Подписчики текущего пользователя
         public ReadOnlyCollection<long> GetFriendsRecent(long? count = null)
         {
             ReadOnlyCollection<long> users = null;
@@ -71,15 +72,21 @@ namespace VK_Monitor.BusinessLogic
             throw new NotImplementedException();
         }
 
-        public ReadOnlyCollection<User> GetFollowers(long? userId = null, int? count = null, int? offset = null, ProfileFields fields = null, NameCase nameCase = null)
+        // Получить подписчиков пользователя vkId
+        public ReadOnlyCollection<User> GetFollowers(long? vkId = null, int? count = null, int? offset = null, ProfileFields fields = null, NameCase nameCase = null)
         {
-            throw new NotImplementedException();
+            return vk.Users.GetFollowers(vkId, count, offset, fields, nameCase);
         }
 
-
-        public ReadOnlyCollection<User> GetSubscribers(long userId)
+        public ReadOnlyCollection<User> FriendsSearch(long userId)
         {
-            throw new NotImplementedException();
+            var param = new FriendsSearchParams()
+            { 
+                Count = 100,
+                UserId = userId
+            };
+
+            return vk.Friends.Search(param);
         }
     }
 }

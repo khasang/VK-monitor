@@ -16,22 +16,19 @@ namespace VK_Monitor.BusinessLogic
 {
     public class VkHandle : IVKhandle
     {
-        IVkService vkRepository;
-        ILogger loggerService;
-
+        IVkService vkService;
         List<ulong> targets;
 
-        public VkHandle(IVkService vkRepository, ILogger loggerService)
+        public VkHandle(IVkService vkService)
         {
-            this.vkRepository = vkRepository;
-            this.loggerService = loggerService;
+            this.vkService = vkService;
 
             targets = new List<ulong>();
         }
 
         public ReportModel GetReportData(IReport report, ulong targetUserId)
         {
-            return report.GetData(vkRepository, targetUserId);
+            return report.GetData(vkService, targetUserId);
         }
 
         public void AddTarget(ulong userId)

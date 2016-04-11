@@ -23,6 +23,6 @@ namespace VK_Monitor.BusinessLogic.Interfaces
 
         ReadOnlyCollection<User> GetFollowers(long? userId = null, int? count = null, int? offset = null, ProfileFields fields = null, NameCase nameCase = null);
 
-        ReadOnlyCollection<User> GetSubscribers(long userId);
+        ReadOnlyCollection<User> FriendsSearch(long userId);
     }
 }

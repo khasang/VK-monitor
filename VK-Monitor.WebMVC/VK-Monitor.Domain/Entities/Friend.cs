@@ -6,17 +6,13 @@ using System.Threading.Tasks;
 
 namespace VK_Monitor.Domain.Entities
 {
-    public class TargetUser
+    public class Friend
     {
         public int Id { get; set; }
-
         public long VkId { get; set; }
         public DateTime Date { get; set; }
 
-        public string OwnerId { get; set; }
-        public virtual ApplicationUser Owner { get; set; }
-
-        public virtual ICollection<Subscriber> Subscribers { get; set; }
-        public virtual ICollection<Friend> Friends { get; set; }
+        public int OwnerId { get; set; }
+        public virtual TargetUser Owner { get; set; }
     }
 }

@@ -9,7 +9,7 @@ using VK_Monitor.Domain.Interfaces;
 
 namespace VK_Monitor.CrawlerConsole
 {
-    class Work
+    public class Work
     {
         IDataManager dataManager;
         IVkService vkService;
@@ -22,23 +22,38 @@ namespace VK_Monitor.CrawlerConsole
 
         public void AddNewSubscriber()
         {
-            var users = dataManager.Users.ToList();
             var targetUsers = dataManager.TargetUsers.GetAll();
-
             foreach (var target in targetUsers)
-            {
-                var subscribersBefor = target.Subscribers.ToList();
-                var subscribersNew = vkService.GetSubscribers(target.VkId)
-                                              .Where(n => subscribersBefor.FirstOrDefault(b => b.VkId == n.Id) == null)
-                                              .Select(n => new Subscriber { VkId = n.Id, Date = DateTime.Now, Owner = target });
+            {                
+                var subscribersNew = GetNewSubscribers(target);
+                foreach (var subscrber in subscribersNew)
+                {
+                    dataManager.Subscribers.Add(subscrber);
+                }
 
+                var friendsNew = GetNewFriends(target);
                 foreach (var subscrber in subscribersNew)
                 {
                     dataManager.Subscribers.Add(subscrber);
                 }
             }
-
             dataManager.Save();
+        }
+
+        private IList<Subscriber> GetNewSubscribers(TargetUser target)
+        {
+            var subscribersBefor = target.Subscribers.ToList();
+            return vkService.GetFollowers(target.VkId)
+                            .Where(n => (subscribersBefor.FirstOrDefault(b => b.VkId == n.Id) == null))
+                            .Select(n => new Subscriber { VkId = n.Id, Date = DateTime.Now, Owner = target }).ToList();
+        }
+
+        private IList<Friend> GetNewFriends(TargetUser target)
+        {
+            var friendsBefor = target.Friends.ToList();
+            return vkService.GetFollowers(target.VkId)
+                            .Where(n => (friendsBefor.FirstOrDefault(b => b.VkId == n.Id) == null))
+                            .Select(n => new Friend { VkId = n.Id, Date = DateTime.Now, Owner = target }).ToList();
         }
     }
 }

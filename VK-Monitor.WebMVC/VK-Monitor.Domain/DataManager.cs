@@ -15,6 +15,7 @@ namespace VK_Monitor.Domain
     {
         IApplicationDbContext dbContext;
 
+        IFriendRepository friend;
         ISubscriberRepository subscriber;
         ITargetUserRepository targetUser;
 
@@ -28,6 +29,17 @@ namespace VK_Monitor.Domain
             if (dbContext == null)
                 throw new NullReferenceException("ApplicationDbContext равен NULL");
             this.dbContext = dbContext;
+        }
+
+        public IFriendRepository Friends
+        {
+            get
+            {
+                if (friend == null)
+                    throw new NullReferenceException("Subscribers равен NULL");
+
+                return friend;
+            }
         }
 
         public ISubscriberRepository Subscribers

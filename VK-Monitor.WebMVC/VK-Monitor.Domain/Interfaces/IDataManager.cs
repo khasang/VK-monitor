@@ -13,6 +13,7 @@ namespace VK_Monitor.Domain.Interfaces
     {
         ITargetUserRepository TargetUsers { get; }
         ISubscriberRepository Subscribers { get; }
+        IFriendRepository Friends { get; }
         IDbSet<ApplicationUser> Users { get; }
         IDbSet<IdentityRole> Roles { get; }
 

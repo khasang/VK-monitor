@@ -7,9 +7,9 @@ using VK_Monitor.BusinessLogic.Interfaces;
 using VkNet.Model;
 using VkNet.Model.RequestParams;
 
-namespace VK_Monitor.UnitTests
+namespace VK_Monitor.UnitTests.FakeClasses
 {
-    public class FakeVkRepository : IVkService
+    public class FakeVkService : IVkService
     {
         ulong applicationId;
         string adminId;
@@ -45,6 +45,12 @@ namespace VK_Monitor.UnitTests
 
 
         public ReadOnlyCollection<User> GetSubscribers(long userId)
+        {
+            throw new NotImplementedException();
+        }
+
+
+        public ReadOnlyCollection<User> FriendsSearch(long userId)
         {
             throw new NotImplementedException();
         }

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VK_Monitor.UnitTests
+namespace VK_Monitor.UnitTests.FakeClasses
 {
     public class FakeLogger : ILogger
     {

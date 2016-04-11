@@ -24,6 +24,7 @@ namespace VK_Monitor.WebUI.Infrastructure
         private void AddBindings()
         {
             kernel.Bind<IDataManager>().To<DataManager>();
+            kernel.Bind<IFriendRepository>().To<EFFriendRepository>();
             kernel.Bind<ISubscriberRepository>().To<EFSubscriberRepository>();
             kernel.Bind<ITargetUserRepository>().To<EFTargetUserRepository>();
             kernel.Bind<IApplicationDbContext>().To<ApplicationDbContext>();

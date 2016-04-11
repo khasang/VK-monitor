@@ -14,6 +14,7 @@ namespace VK_Monitor.Domain
     {
         public DbSet<TargetUser> TargetUsers { get; set; }
         public DbSet<Subscriber> Subscribers { get; set; }
+        public DbSet<Friend> Friends { get; set; }
 
         public IDbSet<ApplicationUser> GetUsers() { return base.Users; }
         public IDbSet<IdentityRole> GetRoles() { return base.Roles; } 
