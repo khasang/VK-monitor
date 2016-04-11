@@ -88,5 +88,76 @@ namespace VK_Monitor.BusinessLogic
 
             return vk.Friends.Search(param);
         }
+
+        public ReadOnlyCollection<Group> GetGroups(long userId)
+        {
+            ReadOnlyCollection<Group> groups = null;
+            try
+            {
+                groups = vk.Groups.Get(userId);
+            }
+            catch
+            {
+                Logger.Error("Ошибка получения списка групп: groups {@0}, пользователя {@1}", groups, userId);
+
+                Debug.WriteLine("Ошибка получения списка групп");
+            }
+            return groups;
+        }
+
+        public WallGetObject GetWallRecords(long ownerId)
+        {
+            WallGetObject wallRecords = null;
+
+            try
+            {
+                wallRecords = vk.Wall.Get(new WallGetParams { OwnerId = -ownerId });
+            }
+            catch
+            {
+
+                Logger.Error("Ошибка получения списка записей со стены: wallRecords {@0}, сообщества/пользователя {@1}", wallRecords, ownerId);
+
+                Debug.WriteLine("Ошибка получения списка записей со стены");
+            }
+            return wallRecords;
+        }
+
+        public ReadOnlyCollection<Comment> GetPostComments(long ownerId, long postId)
+        {
+            int totalCount;
+
+            ReadOnlyCollection<Comment> comments = null;
+
+            try
+            {
+                comments = vk.Wall.GetComments(out totalCount, new WallGetCommentsParams { OwnerId = -ownerId, PostId = postId });
+            }
+            catch
+            {
+                Logger.Error("Ошибка получения списка комментариев : comments {@0}, к записи {@1}, сообщества {@2}", comments, postId, ownerId);
+
+                Debug.WriteLine("Ошибка получения списка комментариев к записи");
+            }
+            return comments;
+        }
+
+        public bool IsLiked(LikeObjectType type, long itemId, long userId)
+        {
+            bool copied;
+
+            if (vk.Likes.IsLiked(out copied, type = type, itemId = itemId, userId = userId))
+                return true;
+            else
+                return false;
+        }
+
+        public bool IsSameAuthor(long commentId, long userId)
+        {
+            if (commentId == (long)userId)
+                return true;
+            else
+                return false;
+        }
     }
 }

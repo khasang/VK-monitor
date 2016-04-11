@@ -24,5 +24,15 @@ namespace VK_Monitor.BusinessLogic.Interfaces
         ReadOnlyCollection<User> GetFollowers(long? userId = null, int? count = null, int? offset = null, ProfileFields fields = null, NameCase nameCase = null);
 
         ReadOnlyCollection<User> FriendsSearch(long userId);
+
+        ReadOnlyCollection<Group> GetGroups(long userId);
+
+        ReadOnlyCollection<Comment> GetPostComments(long ownerId, long postId);
+
+        WallGetObject GetWallRecords(long ownerId);
+
+        bool IsLiked(LikeObjectType type, long itemId, long userId);
+
+        bool IsSameAuthor(long commentId, long userId);
     }
 }
