@@ -27,6 +27,16 @@ namespace VK_Monitor.ConsoleUI
             //{
             //    var subscriber = vkService.GetSubscribers(user.VkId);
             //}
+
+            var vkService = new VkService();
+            ulong vkId = 123456;
+
+            vkService.Authorize(1231241241, "12312312", "sasdfwer");
+
+            var vkHandle = new VkHandle(vkService);
+
+            var report = vkHandle.GetReportData(new Report4(), vkId);
+            var groupList = (report.Answer["groups"] as List<Group>);
         }
     }
 }

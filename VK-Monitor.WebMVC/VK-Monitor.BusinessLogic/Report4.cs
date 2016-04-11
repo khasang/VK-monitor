@@ -12,20 +12,19 @@ using VkNet.Enums.SafetyEnums;
 
 namespace VK_Monitor.BusinessLogic
 {
-    class Report4 : IReport
+    public class Report4 : IReport
     {
         public ReportModel GetData(IVkService vkRepository, ulong userId)
         {
 
             ReportModel report = new ReportModel();
 
-            List<object> Quotations = new List<object>();
+            List<Group> groupList = new List<Group>();
 
             var groups = vkRepository.GetGroups((long)userId);
 
             foreach (var group in groups)
             {
-                report.Answer.Add("groups", group.Id);
                 var wallPosts = vkRepository.GetWallRecords(group.Id);
                 foreach (var post in wallPosts.WallPosts)
                 {
@@ -47,7 +46,12 @@ namespace VK_Monitor.BusinessLogic
                         }
                     }
                 }
+
+                var group = new Group() { };
+                groupList.Add(group);
             }
+
+            report.Answer.Add("groups", groupList);
             return report;
         }
     }

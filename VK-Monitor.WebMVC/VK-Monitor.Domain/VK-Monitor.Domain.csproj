@@ -111,7 +111,10 @@
     <Compile Include="DBInitializers\IInitialization.cs" />
     <Compile Include="DBInitializers\InitUserAdmin.cs" />
     <Compile Include="Entities\ApplicationUser.cs" />
+    <Compile Include="Entities\Comment.cs" />
     <Compile Include="Entities\Friend.cs" />
+    <Compile Include="Entities\Group.cs" />
+    <Compile Include="Entities\Post.cs" />
     <Compile Include="Implementaions\EFFriendRepository.cs" />
     <Compile Include="Implementaions\EFSubscriberRepository.cs" />
     <Compile Include="Implementaions\EFTargetUserRepository.cs" />

@@ -18,5 +18,6 @@ namespace VK_Monitor.Domain.Entities
 
         public virtual ICollection<Subscriber> Subscribers { get; set; }
         public virtual ICollection<Friend> Friends { get; set; }
+        public ICollection<Group> Groups { get; set; }
     }
 }
