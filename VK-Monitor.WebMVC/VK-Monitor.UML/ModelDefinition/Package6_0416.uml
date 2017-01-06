@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="94a6508f-c64b-48d9-81a1-1caaa449f5ea"
+  name="RequestParams"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="0033b3e8-a9ac-4e45-a849-c8ce6d847ce5"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DVkNet.Model.RequestParams"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="4a9cfbd8-d290-421b-aa26-c218e461461d"
+        name="LikesGetListParams"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="817af7ae-8386-4cd1-84bf-fbb4d8924b9c"
+            handle="viewcode://./CodeSchema_Struct?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Model.RequestParams Type%3DLikesGetListParams"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="04dd8e31-a4bd-443c-8f8f-1b6bd0eb65ee"
+            name="struct"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c6c8cd2b-0f9d-489e-8442-405d0f2b0c2f">
+                <propertyInstance
+                  Id="1dcfd48a-e4b7-4070-a19b-8698ce33b083"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cb66d858-01f8-4b3e-bb03-f8d377d22164">
+                <propertyInstance
+                  Id="94a9fcd5-2a3d-47fe-9d04-14d18fc0d9e3"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c35faeac-850f-4e9c-b56a-1330da023cd7">
+                <propertyInstance
+                  Id="ec79311b-74fa-4df2-a8ba-fc4997fdac40"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="108e9c9a-9691-47c9-8015-486b55b87f9a">
+                <propertyInstance
+                  Id="4b845fa8-4699-437a-a04a-e255965b1ec1"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

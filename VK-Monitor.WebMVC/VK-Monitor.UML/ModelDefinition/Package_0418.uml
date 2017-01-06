@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="9f0ece99-f641-4351-8893-34b05742ff9b"
+  name="Interfaces"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="b1223a8c-1cb9-477c-9176-18906272f7dd"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DVK_Monitor.Domain.Interfaces"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="ab8b23a7-64ea-4649-bb36-5458cd33596e"
+        name="IDataManager"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="92dd83a8-20aa-446d-af2b-b4491c7f8d6a"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.Domain%2Fbin%2FDebug%2FVK-Monitor.Domain.dll Namespace%3DVK_Monitor.Domain.Interfaces Type%3DIDataManager"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b10f6f5a-31dd-4223-af17-129663bf895f"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="df49cea1-9516-46ce-80fc-73805c79731a">
+                <propertyInstance
+                  Id="1ba926cf-54d6-41ce-af84-92a83446ae17"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6bbbb54e-fb74-42c9-b655-90fc18797da8">
+                <propertyInstance
+                  Id="df1db00d-a47c-4dc9-bbb7-b5a61a2ef697"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="70b92c43-d976-4338-a043-30394024a991">
+                <propertyInstance
+                  Id="e6f367bc-0bc0-424a-937b-1d6f611f02cf"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9cb00b32-1e96-42fe-9ae3-112b2da51738">
+                <propertyInstance
+                  Id="762cfa54-bf75-4517-8b2d-5fee0f535f51"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

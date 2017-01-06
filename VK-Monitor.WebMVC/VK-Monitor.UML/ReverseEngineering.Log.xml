@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///E:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Журнал создания кода/преобразования текста">
+  <MessageClass Name="Message" Label="Сообщение" Option="Показывать информационные сообщения" />
+  <MessageClass Name="Warning" Label="Предупреждение" Option="Показывать предупреждения" />
+  <MessageClass Name="Error" Label="Ошибка" Option="Показывать ошибки" />
+  <MessageClass Name="Property" Label="Свойство" Option="Показывать метаданные" />
+  <MessageClass Name="Diagnostic" Label="Сообщение" Option="Показывать диагностические сообщения" />
+  <Message Timestamp="2016-04-22T04:18:30" Importance="High" Text="Реконструирование запущено." />
+  <Message Timestamp="2016-04-22T04:18:31" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;VK-Monitor.UML::System&quot; -  (Package)" />
+  <Message Timestamp="2016-04-22T04:18:31" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;VK-Monitor.UML::System::UInt64&quot; -  (Class)   (реконструирован частично - определение не обновлено) " />
+  <Message Timestamp="2016-04-22T04:18:31" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;VK-Monitor.UML::VK_Monitor&quot; -  (Package)" />
+  <Message Timestamp="2016-04-22T04:18:31" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;VK-Monitor.UML::VK_Monitor::BusinessLogic&quot; -  (Package)" />
+  <Message Timestamp="2016-04-22T04:18:31" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;VK-Monitor.UML::VK_Monitor::BusinessLogic::Interfaces&quot; -  (Package)" />
+  <Message Timestamp="2016-04-22T04:18:31" Importance="Medium" Text="Элемент реконструирован в модели UML: &quot;VK-Monitor.UML::VK_Monitor::BusinessLogic::Interfaces::IReport&quot; -  (Interface)" />
+  <Message Timestamp="2016-04-22T04:18:31" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;VK-Monitor.UML::VK_Monitor::BusinessLogic::Interfaces::IReport::GetData&quot; -  (Operation)" />
+  <Message Timestamp="2016-04-22T04:18:31" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;VK-Monitor.UML::VK_Monitor::BusinessLogic::Interfaces::IReport::GetData::userId&quot; -  (Parameter)" />
+  <Message Timestamp="2016-04-22T04:18:31" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;VK-Monitor.UML::VK_Monitor::BusinessLogic::Interfaces::IReport::GetData::vkRepository&quot; -  (Parameter)" />
+  <Message Timestamp="2016-04-22T04:18:31" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;VK-Monitor.UML::VK_Monitor::BusinessLogic::Interfaces::IVkService&quot; -  (Interface)   (реконструирован частично - определение не обновлено) " />
+  <Message Timestamp="2016-04-22T04:18:31" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;VK-Monitor.UML::VK_Monitor::Domain&quot; -  (Package)" />
+  <Message Timestamp="2016-04-22T04:18:31" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;VK-Monitor.UML::VK_Monitor::Domain::Models&quot; -  (Package)" />
+  <Message Timestamp="2016-04-22T04:18:31" Importance="Diagnostic" Text="Элемент реконструирован в модели UML: &quot;VK-Monitor.UML::VK_Monitor::Domain::Models::ReportModel&quot; -  (Class)   (реконструирован частично - определение не обновлено) " />
+  <Message Timestamp="2016-04-22T04:18:31" Importance="High" Text="Полностью реконструировано (1) типов." />
+  <Message Timestamp="2016-04-22T04:18:31" Importance="High" Text="Частично реконструировано (3) типов.  Эти типы не были включены в исходный выбор, поэтому их полные определения не реконструированы.  Данная пустая операция лишь проверила наличие этих типов в модели UML, поскольку они необходимы для полного описания других элементов." />
+  <Message Timestamp="2016-04-22T04:18:31" Importance="High" Text="Операция реконструирования завершена; ошибок: (0), предупреждений: (0)." />
+</Log>

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VK-Monitor.BusinessLogic", "VK-Monitor.BusinessLogic\VK-Monitor.BusinessLogic.csproj", "{8B7850EB-5E01-44F0-83BA-3FEDE287F5A8}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VK-Monitor.WebUI", "VK-Monitor.WebUI\VK-Monitor.WebUI.csproj", "{4178A42E-ECFA-4D9B-85D1-533405C83BB1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VK-Monitor.CrawlerConsole", "VK-Monitor.CrawlerConsole\VK-Monitor.CrawlerConsole.csproj", "{456F08B5-C940-4D81-8B5E-626A24E52F7D}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "VK-Monitor.UML", "VK-Monitor.UML\VK-Monitor.UML.modelproj", "{97FDACF4-4138-4B13-AA4D-4929FA83114C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{456F08B5-C940-4D81-8B5E-626A24E52F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{456F08B5-C940-4D81-8B5E-626A24E52F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{456F08B5-C940-4D81-8B5E-626A24E52F7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97FDACF4-4138-4B13-AA4D-4929FA83114C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97FDACF4-4138-4B13-AA4D-4929FA83114C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97FDACF4-4138-4B13-AA4D-4929FA83114C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97FDACF4-4138-4B13-AA4D-4929FA83114C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

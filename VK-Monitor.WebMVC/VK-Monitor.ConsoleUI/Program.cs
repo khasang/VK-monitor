@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using VK_Monitor.BusinessLogic;
 using VK_Monitor.BusinessLogic.Interfaces;
 using VK_Monitor.Domain;
+using VK_Monitor.Domain.Entities;
 using VK_Monitor.Domain.Implementaions;
 using VK_Monitor.Domain.Interfaces;
 

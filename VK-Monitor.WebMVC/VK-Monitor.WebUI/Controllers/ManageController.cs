@@ -331,7 +331,8 @@ namespace VK_Monitor.WebUI.Controllers
             base.Dispose(disposing);
         }
 
-#region Вспомогательные приложения
+        #region Вспомогательные приложения
+
         // Используется для защиты от XSRF-атак при добавлении внешних имен входа
         private const string XsrfKey = "XsrfId";
 
@@ -364,11 +365,7 @@ namespace VK_Monitor.WebUI.Controllers
         private bool HasPhoneNumber()
         {
             var user = UserManager.FindById(User.Identity.GetUserId());
-            if (user != null)
-            {
-                return user.PhoneNumber != null;
-            }
-            return false;
+            return user?.PhoneNumber != null;
         }
 
         public enum ManageMessageId
@@ -382,6 +379,6 @@ namespace VK_Monitor.WebUI.Controllers
             Error
         }
 
-#endregion
+        #endregion
     }
 }

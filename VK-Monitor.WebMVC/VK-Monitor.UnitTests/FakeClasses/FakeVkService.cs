@@ -54,5 +54,31 @@ namespace VK_Monitor.UnitTests.FakeClasses
         {
             throw new NotImplementedException();
         }
+
+
+        public ReadOnlyCollection<Group> GetGroups(long userId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ReadOnlyCollection<Comment> GetPostComments(long ownerId, long postId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public WallGetObject GetWallRecords(long ownerId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool IsLiked(VkNet.Enums.SafetyEnums.LikeObjectType type, long itemId, long userId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool IsSameAuthor(long commentId, long userId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

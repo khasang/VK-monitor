@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="50509981-e44a-4b2d-8644-34daae1f1848"
+  name="SafetyEnums"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="f2c538b2-033d-4cc7-8fc0-c61179b6af61"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DVkNet.Enums.SafetyEnums"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="4a5af7ac-8c50-4551-a1b6-6210357ab50a"
+        name="NameCase"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="9bc8e4b3-bee3-4a4c-b9d0-a95c92304f89"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.SafetyEnums Type%3DNameCase"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3375945a-f5e8-406b-8ecb-a8c2221e306c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cd2cef1d-aed1-45e1-bb7d-b4e755e979d9">
+                <propertyInstance
+                  Id="d85be420-4fa9-457b-b578-963136ede65e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f9a75adf-c239-44e2-89bd-80b70478ebd0">
+                <propertyInstance
+                  Id="70d372c4-2a5a-45b4-a336-6a9fd8723309"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ebcbfa8f-3924-4760-bb54-8bf9da8a94aa">
+                <propertyInstance
+                  Id="efb54ab7-56c3-4ec5-90f0-c37509daf75c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dab1a1b3-172c-484c-bedc-f639044c732a">
+                <propertyInstance
+                  Id="1b9d208f-3ec3-4e9e-bb9b-79baf013b665"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c7c96c2b-1fd6-4956-8bae-b1e94ca6a277">
+                <propertyInstance
+                  Id="db5b4a9f-00e7-4b73-ad0b-99644d3817ff"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4b55e4c5-68c1-4062-a56a-18cade584e1a"
+        name="LikeObjectType"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="8c23e43c-457d-455a-bebf-b1bf6f5aeee0"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.SafetyEnums Type%3DLikeObjectType"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="eda54267-fe0c-44c8-be09-efea1472d28f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bb7f8663-3ef4-4cca-b482-ba45102d712f">
+                <propertyInstance
+                  Id="6db8f1e9-dda6-4c36-b896-8956f51c0019"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="15cf8007-9e47-47f8-9777-6287701f337a">
+                <propertyInstance
+                  Id="dfefc22e-fc3e-41fc-a0c1-9db85d2bd858"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="26bfedaa-a697-4f10-8573-221096574ef6">
+                <propertyInstance
+                  Id="e88ab8f0-12b8-47dd-a346-e9cf6eb9b8a2"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9a70ce6d-1ad9-4472-9fe1-b222493ca071">
+                <propertyInstance
+                  Id="de8cc7b8-e4da-4d17-b897-f45d1a813ebb"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cbb1433f-9c4a-4a4f-8a6e-d95378d040cf">
+                <propertyInstance
+                  Id="8e39566c-4031-443a-af31-d5a554e25ca6"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
