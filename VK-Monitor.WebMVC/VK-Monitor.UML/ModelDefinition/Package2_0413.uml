@@ -1,0 +1,1950 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="02100e3a-91ac-4c7d-9d94-74311f805594"
+  name="Interfaces"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="fa03229a-9d5a-4dac-b199-12ff5c9d246b"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DVK_Monitor.BusinessLogic.Interfaces"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="f68bcff1-a18e-4b9e-b062-cc848e610a2c"
+        name="IVkService"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="a6211efc-7b36-4738-a7bf-84071665c186"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a1506de1-248d-446c-9cc1-415b75b98bad"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0ec6af29-c983-4ec8-b904-a636b545c7b0">
+                <propertyInstance
+                  Id="209b5a3d-c65e-4922-97c6-6139eee23f23"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c0d38b07-e798-41ba-83f7-522d17619eb0">
+                <propertyInstance
+                  Id="662ca539-0cb2-4285-b827-7d5a3261c62e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="94c93ef0-d898-4dff-b4be-c4d71a05e038">
+                <propertyInstance
+                  Id="90ba935e-e1ef-4fbb-bdaf-04884571ed47"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="52f5447f-6769-4d1c-8f67-874be06ec5d4">
+                <propertyInstance
+                  Id="b3570da2-9c99-4088-b70f-bf5e18a1e788"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="555c564b-580a-4195-9396-6926b2a30fbf"
+            name="Authorize"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0bb946d0-c87d-4e5c-9e10-47506cf268e0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DAuthorize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d1db4432-04ab-46d7-8ffa-94dddbf19d8d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9055a038-a9a9-4bbc-8359-25c153085e73">
+                    <propertyInstance
+                      Id="d69903f1-9d0e-43c1-8076-ae4f8b85ba8e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63be3e17-5751-46ba-859c-e6fcb6da5575">
+                    <propertyInstance
+                      Id="9adb58d4-5e0f-4674-8860-4d1f59962c2e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cda3ece1-e53e-49f8-a40a-8ba54541175b">
+                    <propertyInstance
+                      Id="b24bd8be-7eed-4282-b566-e57dee36644f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10ee31b1-3508-4cff-b491-ecfbe35b3380">
+                    <propertyInstance
+                      Id="c2225aa7-6352-4dcd-ad65-f96a70f7dcef"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f621f36-2622-42ba-a093-72fb6200d832">
+                    <propertyInstance
+                      Id="9673bcdf-a411-435e-9595-caa48292c2c5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd0a411b-a14e-4a80-88d0-0d7436771e0d">
+                    <propertyInstance
+                      Id="91fa2178-fe52-4ced-92bf-14a00c5f4668"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d3b96c5e-476e-4074-bce0-8ee182a82397"
+                  name="applicationId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="93ea7eba-bb03-4dff-ad1e-4db00a2c7d00"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DAuthorize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DapplicationId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f5bdff91-e7d5-4176-a063-631af2bc81d4"
+                      LastKnownName="UInt64"
+                      LastKnownLocation="Package3_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="716ecd16-48d9-4775-86a5-bb5d773f13f9"
+                  name="adminId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8b7b8f33-75ea-424f-82e2-d364a6b90048"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DAuthorize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DadminId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="VK-Monitor.UML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a7e23ae4-f836-49b3-bfa2-077a7ccb3d8d"
+                  name="adminPassword"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8ef038a5-b6d4-4cd3-9871-0aff468f516a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DAuthorize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DadminPassword"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="VK-Monitor.UML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="78e187da-6597-4c7e-a2f3-6fe97182eb91"
+            name="GetUsers"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a5bb3f58-a60b-4bff-b1b6-b514bd7bf4ee"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DGetUsers OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)]))%2C(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.Filters Type%3DProfileFields)%2C(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.SafetyEnums Type%3DNameCase)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b73f3102-1b6c-4a79-a1ad-597e146800d9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f760530-2e85-43f2-b92c-863fc5aa01ab">
+                    <propertyInstance
+                      Id="6406edd6-efd4-4b73-95e2-e660dca1b564"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c32d286e-03e9-4d6f-92d8-a1209752dbb7">
+                    <propertyInstance
+                      Id="eb836ee2-ff61-4866-be70-da0f66664536"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10556fcc-e423-4e6d-a2f7-68792852065e">
+                    <propertyInstance
+                      Id="a2ba9f1a-0fc7-49e9-9b3f-7d9cb381cabc"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa3a6a16-8b59-435d-91f8-5259229a3fed">
+                    <propertyInstance
+                      Id="88ecb132-9920-477b-969b-6792405cda1e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="462cc965-1646-4110-a4d8-f5c6669ebb03">
+                    <propertyInstance
+                      Id="6120cc24-2915-412a-b898-b88c9bf4273e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e95d60f-4ff9-4217-8eb5-2d8635536958">
+                    <propertyInstance
+                      Id="1a50f6de-8573-4a4a-872c-c5a9898a1565"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2fb2cb0d-436a-4704-aed0-d70ae136f6c8"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="69951d36-60a4-4e09-ad82-160800604c55"
+                      LastKnownName="ReadOnlyCollection&lt;User‎&gt;"
+                      LastKnownLocation="Package_0416.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0c220984-d502-4468-b841-73f754f1069d"
+                  name="userIds"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2a67a9d4-1bb4-4623-947c-75d00eb9b79b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DGetUsers OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)]))%2C(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.Filters Type%3DProfileFields)%2C(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.SafetyEnums Type%3DNameCase)]) ParameterIdentifier%3DuserIds"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="9025774c-0b47-41b8-b22b-1f98b447dbb3"
+                      LastKnownName="IEnumerable&lt;Int64‎&gt;"
+                      LastKnownLocation="Package7_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b5c2e15d-5fed-48c5-94e7-7617d9ea17fd"
+                  name="fields"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="716b1323-3384-472c-ad8e-2835ad289598"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DGetUsers OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)]))%2C(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.Filters Type%3DProfileFields)%2C(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.SafetyEnums Type%3DNameCase)]) ParameterIdentifier%3Dfields"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6cfa8268-a6d3-4da8-87e7-a730ff78d068"
+                      LastKnownName="ProfileFields"
+                      LastKnownLocation="Package4_0416.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cdbaf49f-69a7-429c-8e2c-e283e81963a0"
+                  name="nameCase"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7699509d-f2d7-4830-8c5c-7c909e02bb83"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DGetUsers OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)]))%2C(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.Filters Type%3DProfileFields)%2C(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.SafetyEnums Type%3DNameCase)]) ParameterIdentifier%3DnameCase"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4a5af7ac-8c50-4551-a1b6-6210357ab50a"
+                      LastKnownName="NameCase"
+                      LastKnownLocation="Package5_0416.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="dd543fa4-989f-4cc5-896c-b40b4f51ce78"
+            name="GetLikesList"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f024d6fe-bee8-4c66-b6fe-8bfaba1f9933"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DGetLikesList OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Model.RequestParams Type%3DLikesGetListParams)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d792d58a-ec68-42d7-b5c8-33a236e77dcb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f37a4a1a-e66a-4b8d-8686-37a30115e088">
+                    <propertyInstance
+                      Id="e519357b-a463-4af7-84c3-cfca6af79d6d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c82354e8-6560-418e-aeb6-c687efc3356f">
+                    <propertyInstance
+                      Id="eab20876-1833-485c-a32c-fdce60b56007"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2eafb4e-ffe1-4279-aaa9-82055ce2aeff">
+                    <propertyInstance
+                      Id="f97185a0-56cd-492d-b4d0-d87e4b9477e8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f1f4285a-aef3-4b90-991e-c379f7d32554">
+                    <propertyInstance
+                      Id="1f3a078b-85e2-4727-83ca-5e7e76bd65e7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0e31548-e028-472e-be8b-8a9ad948feea">
+                    <propertyInstance
+                      Id="6ef6a3d3-6f70-443c-a27c-b8529ca30820"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e13dd49d-6261-4a26-a996-f98ff9e8ff1d">
+                    <propertyInstance
+                      Id="89982320-a644-4734-ac1d-4bd6b3c65eb3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9320e3d9-dc28-48d4-ba15-3e181d24abb8"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="607dce11-bdd2-4f4c-8e5b-689daae2b129"
+                      LastKnownName="ReadOnlyCollection&lt;Int64‎&gt;"
+                      LastKnownLocation="Package_0416.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5b705e62-66ef-43aa-9a94-d55198a5eb3b"
+                  name="params"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8894b553-64b5-4f7c-8062-b0228659a2eb"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DGetLikesList OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Model.RequestParams Type%3DLikesGetListParams)]) ParameterIdentifier%3Dparams"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4a9cfbd8-d290-421b-aa26-c218e461461d"
+                      LastKnownName="LikesGetListParams"
+                      LastKnownLocation="Package6_0416.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6111238f-842c-47ba-a27e-30fcb7f34ef8"
+            name="GetFriendsRecent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="55924932-c7b9-4786-8d7e-a3060e658a82"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DGetFriendsRecent OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="480b21f7-0110-4ed4-bb0c-022adaac200b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab2f4512-09e4-4151-8f17-9259fbbbfcf3">
+                    <propertyInstance
+                      Id="9e045183-dc0d-4dea-950b-8fce44e49e0a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f3e5e2b-579d-4498-b8fb-d62cde4299ee">
+                    <propertyInstance
+                      Id="1b3f0bc8-aa41-4c4b-830f-90bedf85761e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05b5244f-6c4b-4457-b378-b869aeef1c82">
+                    <propertyInstance
+                      Id="b06166cb-7d50-497b-a756-46dea4ce0a2e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa31ca5e-1b69-4619-b6e6-164fd1bef6a0">
+                    <propertyInstance
+                      Id="a6456544-f0ad-4ea2-8983-e08446a56f84"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e273a751-bddc-4ac4-b10f-b5938df9f0ae">
+                    <propertyInstance
+                      Id="844c4ae7-7294-4ee0-b685-2a9a2efa7833"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ada104d-47ba-45bc-b378-535d2275a385">
+                    <propertyInstance
+                      Id="44585fd2-2021-44cd-94b8-3fdb679e9e54"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2950f925-ec82-4863-a933-b3c620374371"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="607dce11-bdd2-4f4c-8e5b-689daae2b129"
+                      LastKnownName="ReadOnlyCollection&lt;Int64‎&gt;"
+                      LastKnownLocation="Package_0416.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d81535f2-f870-4bb9-9c0c-8f7faaefc9dc"
+                  name="count"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d530ca0a-963a-4c95-836d-5e898c5f9906"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DGetFriendsRecent OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)]))]) ParameterIdentifier%3Dcount"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="55307a0d-5f29-4489-af8e-eb42f25ad5a8"
+                      LastKnownName="Nullable&lt;Int64‎&gt;"
+                      LastKnownLocation="Package3_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c672c133-c0a4-41e4-9ec6-9bc6abbaa8de"
+            name="GetFollowers"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1d9aef29-1d80-4c5b-b4cd-04cedb774a5b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DGetFollowers OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))%2C(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.Filters Type%3DProfileFields)%2C(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.SafetyEnums Type%3DNameCase)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4a53e22b-c41c-42b6-82b7-dfc91c304136"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dfd001e3-c071-4fc1-9eef-976127b77535">
+                    <propertyInstance
+                      Id="dbbad1eb-d2bd-48f6-a5f5-5364412ab5d3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ce98fc2-4f04-441e-8ee0-ee9cf102d9dd">
+                    <propertyInstance
+                      Id="ae0e2d1f-f9cc-47f7-96d6-a0bb092898f3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9dd0acc2-14de-455b-9d55-20e4d5b0ed92">
+                    <propertyInstance
+                      Id="2857c969-3ba4-4946-b409-4f1338b430d9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1721ab6-0262-40aa-aa82-de8d7e2610bb">
+                    <propertyInstance
+                      Id="b3b1e91b-006c-486d-af79-aaad7a281125"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="38c327c5-e9d7-4a72-8f80-43b45c8e7c15">
+                    <propertyInstance
+                      Id="8c6de446-a9bd-4c29-ad9b-38031ce915d6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e281b3e-8f33-4d59-b8c2-ecc5ece7217a">
+                    <propertyInstance
+                      Id="88f32889-9936-467f-97d2-4dd8d95a35f4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="82261b55-2438-416c-b12e-482034c8c6c4"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="69951d36-60a4-4e09-ad82-160800604c55"
+                      LastKnownName="ReadOnlyCollection&lt;User‎&gt;"
+                      LastKnownLocation="Package_0416.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ef05797e-3f7f-4f54-b7da-8839015b1389"
+                  name="userId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a100a755-951f-4d5d-9bf0-7d474b6ea3f6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DGetFollowers OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))%2C(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.Filters Type%3DProfileFields)%2C(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.SafetyEnums Type%3DNameCase)]) ParameterIdentifier%3DuserId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="55307a0d-5f29-4489-af8e-eb42f25ad5a8"
+                      LastKnownName="Nullable&lt;Int64‎&gt;"
+                      LastKnownLocation="Package3_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8dd4824d-1a59-44e7-8d9d-8e68b641fb29"
+                  name="count"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b2517d45-77e1-4cd2-8c15-e8a26f2c07f2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DGetFollowers OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))%2C(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.Filters Type%3DProfileFields)%2C(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.SafetyEnums Type%3DNameCase)]) ParameterIdentifier%3Dcount"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b871d059-b280-463a-bac0-ff5b6f0090f3"
+                      LastKnownName="Nullable&lt;Int32‎&gt;"
+                      LastKnownLocation="Package3_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ba2e8ca5-4aa2-4af0-92eb-c411c7d4e484"
+                  name="offset"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="77c4c4f8-9919-4fff-9ad5-ddb5dc9270fc"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DGetFollowers OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))%2C(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.Filters Type%3DProfileFields)%2C(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.SafetyEnums Type%3DNameCase)]) ParameterIdentifier%3Doffset"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b871d059-b280-463a-bac0-ff5b6f0090f3"
+                      LastKnownName="Nullable&lt;Int32‎&gt;"
+                      LastKnownLocation="Package3_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="91fb5a4d-efe9-43e0-aebf-4b46cfce4587"
+                  name="fields"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="68197e84-cd6c-4cb6-bf8f-927289320ab4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DGetFollowers OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))%2C(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.Filters Type%3DProfileFields)%2C(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.SafetyEnums Type%3DNameCase)]) ParameterIdentifier%3Dfields"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6cfa8268-a6d3-4da8-87e7-a730ff78d068"
+                      LastKnownName="ProfileFields"
+                      LastKnownLocation="Package4_0416.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c905b4eb-8be2-47e8-80cd-16daa17cadbf"
+                  name="nameCase"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4ff5a4b1-d494-4235-8a2f-70e9ba7bb369"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DGetFollowers OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))%2C(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.Filters Type%3DProfileFields)%2C(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.SafetyEnums Type%3DNameCase)]) ParameterIdentifier%3DnameCase"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4a5af7ac-8c50-4551-a1b6-6210357ab50a"
+                      LastKnownName="NameCase"
+                      LastKnownLocation="Package5_0416.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f5fc2f85-679d-47dd-9126-dd9982fb9022"
+            name="FriendsSearch"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e5954136-5cdc-41ec-a6df-0df069f4ff27"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DFriendsSearch OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ccd7af78-2978-45d9-9a84-06d06ff67595"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7ccd5e8-e5c6-4cab-b248-247b08d5ecd9">
+                    <propertyInstance
+                      Id="f8a6b36f-015d-4741-8618-35a969a0957e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e8cc89e-7001-4b13-b696-8caafcb8c383">
+                    <propertyInstance
+                      Id="6570616a-a05b-478b-aac4-0444706422f0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8abbc7fb-f5d0-4f99-99ac-3f06d9df3879">
+                    <propertyInstance
+                      Id="61028a50-cf93-4153-9e8e-23dfef3b6f0a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb8e516c-424d-4cd9-81ff-d28cd1fa7c5d">
+                    <propertyInstance
+                      Id="62e20e38-301b-431a-aabf-47b71e74231d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f4da01e9-d215-4668-98f2-9e3302ec4172">
+                    <propertyInstance
+                      Id="6748a193-79cf-4f9b-82a8-554a5864e826"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b942edf6-d61e-48de-9e1a-4a637dac57cf">
+                    <propertyInstance
+                      Id="3e1199cc-baf2-4297-ab20-3822de6df767"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7762d52f-5771-4071-ab52-48b61eb4df5b"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="69951d36-60a4-4e09-ad82-160800604c55"
+                      LastKnownName="ReadOnlyCollection&lt;User‎&gt;"
+                      LastKnownLocation="Package_0416.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f4ab47fd-5492-411a-b86d-70b9dd1cdd7a"
+                  name="userId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="488ca490-0dbf-4331-8fea-82d52e438548"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DFriendsSearch OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)]) ParameterIdentifier%3DuserId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="76e5e681-a693-4fed-8231-630597586664"
+                      LastKnownName="Int64"
+                      LastKnownLocation="Package3_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="630fb343-a8a0-4111-926b-3b2e22235675"
+            name="GetGroups"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d5acf630-b742-41f9-a83b-bf436b357ce1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DGetGroups OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8c97fa6c-9227-4823-af15-9c1987ee2882"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4529631f-4a55-4a91-b330-0dc5e3f2b2ae">
+                    <propertyInstance
+                      Id="6c459297-9b97-43fe-95a1-b66f519f95ad"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f200ac85-a65c-4a6b-a9f0-c36038807f42">
+                    <propertyInstance
+                      Id="8fe81b7b-2f70-429a-b060-49f6ea3d0eb7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c929ff3-bade-4ee3-8185-2189092938bf">
+                    <propertyInstance
+                      Id="08bbe374-cb9e-4b47-99b0-421876a992da"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2c3423cd-5cc6-42b6-8fda-21deda169411">
+                    <propertyInstance
+                      Id="d12736b2-3c3d-48fc-83e4-33a77c502373"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba4b4198-1e6b-4be5-baab-c535ba46dc8f">
+                    <propertyInstance
+                      Id="18280aa7-4404-43a4-a59d-153a1578da7d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0618728-2bec-41dc-b2e1-b3059a2e902d">
+                    <propertyInstance
+                      Id="e3b5a564-0398-4dd8-87b6-108f669d015b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="335629a9-2928-466c-b369-a5635a83944e"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c7911bdd-ca98-4574-9ece-c87dc094d8e4"
+                      LastKnownName="ReadOnlyCollection&lt;Group‎&gt;"
+                      LastKnownLocation="Package_0416.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c3fc94bb-0732-434f-9b8e-52090cd81609"
+                  name="userId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="328fd53e-7c6f-44e7-ae14-d096d298e48e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DGetGroups OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)]) ParameterIdentifier%3DuserId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="76e5e681-a693-4fed-8231-630597586664"
+                      LastKnownName="Int64"
+                      LastKnownLocation="Package3_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4057ba17-7ec1-4f2f-b5e7-c004c1c98a8a"
+            name="GetPostComments"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1d899084-1d39-4494-91fe-92a9210d4c94"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DGetPostComments OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="413416d6-ce0c-4036-bffa-782e082e413b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0df65ae5-602c-41d8-a19e-4f6388a6eb30">
+                    <propertyInstance
+                      Id="36612612-96a6-4c89-a113-9b6896c53905"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39486e97-b3e5-4ea5-b472-c57ebf177114">
+                    <propertyInstance
+                      Id="e8d6700f-5028-40d2-8dac-a8e531b364f9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29036cad-dfcf-4831-86fe-9a25152df74a">
+                    <propertyInstance
+                      Id="02a8fa53-28b9-46b4-a1dd-cde26d8839bd"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f1d67fa-2bcc-407c-bcd5-af2c916026a4">
+                    <propertyInstance
+                      Id="200d9957-26f4-4e39-a738-ae56f3ec204c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="47335295-57f2-41d9-89b6-44ac17ff5d5b">
+                    <propertyInstance
+                      Id="3d5f18d0-ff32-40e8-ab8e-7884c62dea90"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="90f4f194-9b52-438a-9d40-e876c91d8df6">
+                    <propertyInstance
+                      Id="5d050e15-c472-4561-966d-7aaecffc76c1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="69f5f10b-1005-4adb-bd63-1d7d37432777"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="78c0dc0f-52f0-4f88-a685-72cb9d592be7"
+                      LastKnownName="ReadOnlyCollection&lt;Comment‎&gt;"
+                      LastKnownLocation="Package_0416.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="123d97d9-c06c-4b27-be67-52d09457f78d"
+                  name="ownerId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="006a1cfa-993e-4f55-b5aa-2630c425e4b1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DGetPostComments OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)]) ParameterIdentifier%3DownerId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="76e5e681-a693-4fed-8231-630597586664"
+                      LastKnownName="Int64"
+                      LastKnownLocation="Package3_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="47aa84bb-b263-4157-9fff-6ffb15a7f8bf"
+                  name="postId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1902fbfb-af96-4f53-90df-83d0a4c3ffea"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DGetPostComments OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)]) ParameterIdentifier%3DpostId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="76e5e681-a693-4fed-8231-630597586664"
+                      LastKnownName="Int64"
+                      LastKnownLocation="Package3_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ce0d59a9-be27-42f7-99ef-32656b0614a3"
+            name="GetWallRecords"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="bedec305-b992-4678-8125-b5741a0ae176"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DGetWallRecords OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="31517f5d-ac0c-49c1-81a0-81bc4d82770a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="006b48a7-b6f7-43d0-bf21-6f1a8c8415ef">
+                    <propertyInstance
+                      Id="a9b18dfc-8f61-4b3a-b67a-5251dbfdd404"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f74d344d-7278-4d7b-b58c-9ef509ac8ebf">
+                    <propertyInstance
+                      Id="b65adbfe-2e9c-4d6e-9a8d-2011daa17bfc"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07291fa7-3539-423b-b6a6-74c0fbfa5a35">
+                    <propertyInstance
+                      Id="dc552207-55c3-457e-8ff1-0ff4d76d53f0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a43ff381-ee39-4057-9200-234f93fd2944">
+                    <propertyInstance
+                      Id="864470e6-df2a-459a-bc9a-1914fbda35d7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eba72c03-03ce-44c7-8f71-af417db01d80">
+                    <propertyInstance
+                      Id="77aca684-57bc-457b-a61d-299b805e1430"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7fd8188-cba2-4091-9c43-3fb3ecc01bd0">
+                    <propertyInstance
+                      Id="66df94c2-6ca7-4773-8bad-701de9a79850"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5de559cc-ea53-4474-9621-fce91dfe60ba"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="897c9d49-c13b-494e-9b98-c64a430723bb"
+                      LastKnownName="WallGetObject"
+                      LastKnownLocation="Package2_0416.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8b793321-5ac1-4d42-bbaa-1d9b6f1cff6c"
+                  name="ownerId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c7c74fc8-e635-4def-8446-de84d30ca57f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DGetWallRecords OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)]) ParameterIdentifier%3DownerId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="76e5e681-a693-4fed-8231-630597586664"
+                      LastKnownName="Int64"
+                      LastKnownLocation="Package3_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6e677154-6b40-4d1e-af36-5c17f2cdd835"
+            name="IsLiked"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="78722ea9-c563-40c0-8b5a-2079498c9aa8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DIsLiked OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.SafetyEnums Type%3DLikeObjectType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b3d2d50b-15cb-49c8-8133-7e7080acba37"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6984bff9-96db-454b-aaf6-37d22f0e1809">
+                    <propertyInstance
+                      Id="387e7301-afb9-406c-b8c5-61c1b9d2b5dd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a236101-fc70-46aa-b266-45143e6cf190">
+                    <propertyInstance
+                      Id="1eae3ab9-2096-4ece-93df-01c00557dc2a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5660b16-0ed0-495d-8652-a6ac91c31409">
+                    <propertyInstance
+                      Id="70ef2ddc-ee09-4502-8d13-b9bfc91d05a4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5132fb7a-f717-4c3c-9291-0b6116f43a8a">
+                    <propertyInstance
+                      Id="5edef7ad-cc49-40b0-8ea1-d01acd60ce0a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40af22b1-a9d0-4771-8c0a-285ba56e7441">
+                    <propertyInstance
+                      Id="acabc89b-698d-4ae0-bb7b-0dd450653c75"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="61d63663-e01c-42d7-a588-327b78cc486e">
+                    <propertyInstance
+                      Id="0e7cb6f1-e035-4e4d-b42b-30e36c28dd20"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a336cdff-bd15-4fdb-82a4-f69fe3dc49fb"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="VK-Monitor.UML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a4cbc52d-219e-4921-9c58-a92b9ce8fe2c"
+                  name="type"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e8e8da9f-b608-4b30-b17b-e1f2385d04c9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DIsLiked OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.SafetyEnums Type%3DLikeObjectType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)]) ParameterIdentifier%3Dtype"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4b55e4c5-68c1-4062-a56a-18cade584e1a"
+                      LastKnownName="LikeObjectType"
+                      LastKnownLocation="Package5_0416.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="67abfc09-f67d-416f-859e-0fd7d374bbbc"
+                  name="itemId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="55ec1592-2184-434f-be10-0ae8114add3b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DIsLiked OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.SafetyEnums Type%3DLikeObjectType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)]) ParameterIdentifier%3DitemId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="76e5e681-a693-4fed-8231-630597586664"
+                      LastKnownName="Int64"
+                      LastKnownLocation="Package3_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cc7e6245-cd5a-4a01-bca9-66100ff8c85b"
+                  name="userId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="361fec69-3043-4da2-a8c4-c329c17e7a1b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DIsLiked OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Enums.SafetyEnums Type%3DLikeObjectType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)]) ParameterIdentifier%3DuserId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="76e5e681-a693-4fed-8231-630597586664"
+                      LastKnownName="Int64"
+                      LastKnownLocation="Package3_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6802825e-f7d1-4480-96bc-e7ac12a5972b"
+            name="IsSameAuthor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="800478fc-e5bd-4fe6-8e81-183b5f10b91d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DIsSameAuthor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="775f0630-c2ad-4609-82b8-4face4833d76"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa8a44aa-6f1e-47b1-9668-85798164c095">
+                    <propertyInstance
+                      Id="ec85879c-a150-496e-9033-6dcffd02b88c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1ca106f-5597-432f-a750-4914482d1ae7">
+                    <propertyInstance
+                      Id="199e60e9-765d-44c4-a234-f46011bcd82a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c39c2dd5-df9b-4f49-85fb-1f3d5f4ee481">
+                    <propertyInstance
+                      Id="a7d1d1a3-1894-4675-819a-fce98a9447be"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="55843be6-f5fa-463e-b26e-f2570f15b8fa">
+                    <propertyInstance
+                      Id="56b8969d-d07b-424b-aa41-b67ef92e0a45"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="967b54ea-dd4f-4c0e-a79e-11606c9f4e85">
+                    <propertyInstance
+                      Id="be8b9faf-e075-41ac-8763-c24688cee1a4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d030d341-37ba-41b5-9f69-4041ae628046">
+                    <propertyInstance
+                      Id="ef6f6baa-8111-4536-a740-ab202b805df7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c6be16d9-5d45-4e8f-bf2a-837c9063d7ee"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="VK-Monitor.UML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="59dc06ba-d269-4e15-8830-005fd0a02e84"
+                  name="commentId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="981c024c-ee15-4c58-a542-41c23608d356"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DIsSameAuthor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)]) ParameterIdentifier%3DcommentId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="76e5e681-a693-4fed-8231-630597586664"
+                      LastKnownName="Int64"
+                      LastKnownLocation="Package3_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5ca55933-9c11-4873-85d7-bc73d6ad73f8"
+                  name="userId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="db66a8d1-a48c-4de3-8748-029135a4a8c1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService Member%3D(Name%3DIsSameAuthor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)]) ParameterIdentifier%3DuserId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="76e5e681-a693-4fed-8231-630597586664"
+                      LastKnownName="Int64"
+                      LastKnownLocation="Package3_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="b8a39815-b29d-47f2-a3d1-3d80df24d721"
+        name="IReport"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="cca7bfbf-970c-4338-b0c6-76ca970caa02"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIReport"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c72005f8-0750-437d-9380-497384064c28"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4ab1fcaf-dc1c-4388-9f94-05af64c5ad74">
+                <propertyInstance
+                  Id="728da10f-b2e1-481a-b512-9db8d5a6d951"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="01825d44-2086-4955-8386-4d135386731f">
+                <propertyInstance
+                  Id="760b4d4e-73b8-474a-9146-760e696a9346"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1e3b2e4c-38c8-40c1-bd76-1f954b709806">
+                <propertyInstance
+                  Id="535a511a-c0bd-477a-a405-9d839dbdc9c0"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a7415bb7-f1e2-46c3-80c5-0ee25ebc43c7">
+                <propertyInstance
+                  Id="9f563b73-5613-428b-bf60-4826605274b6"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="5ea49142-d580-4664-9471-a7e8e20ea4b2"
+            name="GetData"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2a950fb9-707d-4cc3-a12a-6b58d20395f1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIReport Member%3D(Name%3DGetData OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b4321f9c-0ca2-4d01-8c71-ef17f4439a42"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5879144f-0e87-4538-9332-7c7a95e5fd2c">
+                    <propertyInstance
+                      Id="1cda522f-155f-41c4-a1ea-5e31e27d3cd8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="55122999-a6d3-4c99-a98f-ddf04b9024ce">
+                    <propertyInstance
+                      Id="f9b57c23-08bc-45b9-abb1-3ec216fc8190"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7cf8d8b9-d9f6-4542-a32e-57c40cc9df82">
+                    <propertyInstance
+                      Id="895a02c5-09f2-484e-bfc2-d45dac20a7e6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec3e64e4-81fa-44fd-a744-36ba2a5683f1">
+                    <propertyInstance
+                      Id="f824a239-ded5-45d6-8e31-179d29ed0b00"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58fd3013-5a7f-495c-ad90-08b9654db9e0">
+                    <propertyInstance
+                      Id="3b4849be-fa69-4c86-8921-0e3ccc858fb0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="95824f75-f838-4e92-bbd9-b566c0f1e646">
+                    <propertyInstance
+                      Id="f131b779-39cb-4680-9b0a-8f834066090e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="63e63adc-cd92-43af-a8ca-88b69352ec4a"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="cd504980-320d-42c3-9a0f-c6092a98fb58"
+                      LastKnownName="ReportModel"
+                      LastKnownLocation="Package5_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d89786c7-8c82-4a73-90d3-965a297b17b9"
+                  name="vkRepository"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5c2c547f-d49f-4465-a70a-47aae2ee90ab"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIReport Member%3D(Name%3DGetData OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)]) ParameterIdentifier%3DvkRepository"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="f68bcff1-a18e-4b9e-b062-cc848e610a2c"
+                      LastKnownName="IVkService"
+                      LastKnownLocation="Package2_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2e1ace09-df54-4adb-b0d5-30cad52e7a03"
+                  name="userId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7f14478b-8f05-4936-b905-c11b068cd45e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIReport Member%3D(Name%3DGetData OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVkService)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)]) ParameterIdentifier%3DuserId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f5bdff91-e7d5-4176-a063-631af2bc81d4"
+                      LastKnownName="UInt64"
+                      LastKnownLocation="Package3_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="cd62c719-ecb2-4637-9dd5-db9614668bf2"
+        name="IVKhandle"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="109a3695-12bf-4144-b741-3f58ffae5444"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVKhandle"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3567d6ca-277a-4f03-8a4f-f7e58ae962fd"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1abb8ff6-cb77-4e40-9eb3-dbc779a778cd">
+                <propertyInstance
+                  Id="7f1351b4-d2f2-4e91-8f87-fd6fc5ce00e6"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ce9d947c-55bd-49ac-95d7-2c2ab4578f6a">
+                <propertyInstance
+                  Id="162e4cba-462f-4f6a-af9e-c5afeb16dffe"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2918bfe6-8486-44bb-baa9-9519e0ee79a2">
+                <propertyInstance
+                  Id="79886277-7af8-4583-b47c-3bcdb019c57b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d3f52555-8ca7-4071-87c9-57c648e9b10a">
+                <propertyInstance
+                  Id="aa16ac71-1576-4a07-a3c4-80ac4be2e345"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="9d94b422-cbd9-405c-afb9-f75c791b5440"
+            name="AddTarget"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c9f4e2b5-2569-4bd0-9221-b7dfb9225b26"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVKhandle Member%3D(Name%3DAddTarget OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2c671aa5-cf24-437d-b008-8e2ffdce458f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ffbc1807-9eed-41ef-9f27-f0bf893289da">
+                    <propertyInstance
+                      Id="fb4560d3-c4c0-4c5d-9866-4f4987bf6c4d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1b46fd7-a194-42d9-bf06-ccba98e64bfc">
+                    <propertyInstance
+                      Id="2c71fae4-ae16-4a77-8ee6-0432dcbae43e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd41d53e-972b-4b5d-8481-fc23692bdb46">
+                    <propertyInstance
+                      Id="492a9588-a6f7-46bc-a71a-8e2d395f520c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb9faff8-c94b-4bab-bc83-b3c0e5325fcc">
+                    <propertyInstance
+                      Id="ec80de32-b782-4c3f-b6c5-d29396b8777d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49d1f365-18ac-4855-bd35-ecb60bb21ce9">
+                    <propertyInstance
+                      Id="9a865ffc-6866-40d9-836c-ef8fd423a29e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9617ded1-b5ae-465b-a945-0eb4c63b90e1">
+                    <propertyInstance
+                      Id="4fdb8b09-003b-4e42-abe2-5a8eb69aba48"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="354acb2e-073a-4f4f-b44c-7d9c33a3056c"
+                  name="userId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c898a7de-5404-4f12-905c-bf8742718d53"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVKhandle Member%3D(Name%3DAddTarget OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)]) ParameterIdentifier%3DuserId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f5bdff91-e7d5-4176-a063-631af2bc81d4"
+                      LastKnownName="UInt64"
+                      LastKnownLocation="Package3_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e1473e1f-9d66-41e2-a507-4df868c0c4f2"
+            name="DeleteTarget"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="27cac72e-4bc8-420c-ace4-fa7b228209ba"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVKhandle Member%3D(Name%3DDeleteTarget OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6e0a13a3-8619-449e-9637-e18085a493fb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24a505f1-95f2-41f6-871f-87c25f1e9bc1">
+                    <propertyInstance
+                      Id="d270f252-68e6-490b-9ad5-21101d5895e2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c017663-3d2d-4526-97bb-08f2c165686e">
+                    <propertyInstance
+                      Id="27d00340-0573-4c81-9552-bea070f5228a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f00a6243-c2a2-487f-b12a-da00ed979df6">
+                    <propertyInstance
+                      Id="07d59b62-e839-4f3c-aa65-9c9cedb9da16"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8e09d0d-ccaf-435a-beff-ac5e9c2f5741">
+                    <propertyInstance
+                      Id="b191e206-c14f-4f0f-97d7-a6b8a56b79ae"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75f252ab-7fd5-449f-b028-3260d1438d2a">
+                    <propertyInstance
+                      Id="160536be-7028-4321-b1ec-562d60812188"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44d28a18-0939-449d-a2f8-540afa694c98">
+                    <propertyInstance
+                      Id="8715e9d2-384e-4159-82e6-867c505f3816"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d77b9d87-c9e6-4cd8-9845-b3b3208b40dd"
+                  name="userId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f19568ec-28fe-4642-aa91-119d0b34680a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVKhandle Member%3D(Name%3DDeleteTarget OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)]) ParameterIdentifier%3DuserId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f5bdff91-e7d5-4176-a063-631af2bc81d4"
+                      LastKnownName="UInt64"
+                      LastKnownLocation="Package3_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="085c41e2-d155-45e3-85df-01a40ef22fa1"
+            name="GetReportData"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d1b704c6-c152-4c28-82df-85b46e90abef"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVKhandle Member%3D(Name%3DGetReportData OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIReport)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0421633d-2ef5-49d9-9ce9-985be2492bb8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a4351685-2db8-4c35-8bad-e65b84ec284a">
+                    <propertyInstance
+                      Id="240c4e5b-8383-43fd-841f-ee277069e344"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d45b9329-73b0-43b4-bb09-08cf62d72309">
+                    <propertyInstance
+                      Id="ec8e2cbd-2140-4d78-9a5a-6744a5e25c6c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c2faeab-beae-4372-b9aa-a5d481f0e709">
+                    <propertyInstance
+                      Id="69c1272b-099d-4cd6-bfbe-13086451d86f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b858977d-58fe-419c-9438-a2d74a968389">
+                    <propertyInstance
+                      Id="d763898e-fcc3-4af8-9548-cfa78c571dd4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16bc9ed4-290c-412a-92e2-06337c2660ed">
+                    <propertyInstance
+                      Id="ce438006-64bf-4efa-8fa8-981f23ab8a99"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8143ee1-ce23-4b29-a71e-c287abca2dbc">
+                    <propertyInstance
+                      Id="a09f81b8-0979-4b9a-98eb-2d74712cccc0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="080c2168-0227-4c3e-9db2-ea2b24e7f3a0"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="cd504980-320d-42c3-9a0f-c6092a98fb58"
+                      LastKnownName="ReportModel"
+                      LastKnownLocation="Package5_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="18161655-105c-499e-9471-8c904b70b44a"
+                  name="report"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9cbef093-b7fb-460a-8eaa-e6b91d84e9ce"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVKhandle Member%3D(Name%3DGetReportData OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIReport)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)]) ParameterIdentifier%3Dreport"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="b8a39815-b29d-47f2-a3d1-3d80df24d721"
+                      LastKnownName="IReport"
+                      LastKnownLocation="Package2_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="11dbc5f1-2762-48a9-973b-012dbdaeeb4e"
+                  name="targetUserId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="84629fb6-ef13-4a0f-a63d-14a8966641b8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVKhandle Member%3D(Name%3DGetReportData OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIReport)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)]) ParameterIdentifier%3DtargetUserId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f5bdff91-e7d5-4176-a063-631af2bc81d4"
+                      LastKnownName="UInt64"
+                      LastKnownLocation="Package3_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8d4e5ecf-e90d-47a9-98ae-6759dae2bb0e"
+            name="GetTargets"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a02d378a-17b5-4f26-a4a8-b379f339427a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2FVK-Monitor.BusinessLogic%2Fbin%2FDebug%2FVK-Monitor.BusinessLogic.dll Namespace%3DVK_Monitor.BusinessLogic.Interfaces Type%3DIVKhandle Member%3DGetTargets"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="49826d34-0604-4431-9de2-b3a71dd885f5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9356a63-8b9f-4e02-ad42-052caeec6306">
+                    <propertyInstance
+                      Id="87d13f62-c0f8-413d-a695-4a65fcb84c30"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9a21a0a-ae3c-4859-8578-f6f458434510">
+                    <propertyInstance
+                      Id="1c4e3661-e45f-4ad8-86e8-b92c471202e5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db486396-d36d-49d8-bf2e-f117fd6b2b5c">
+                    <propertyInstance
+                      Id="331867e6-0199-4642-bd83-c42e50be2ac6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0274382e-370d-4de3-916d-a396a0e5ec38">
+                    <propertyInstance
+                      Id="f704f393-d6bb-4e22-b116-48a45232b548"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c798940-0014-4631-ade9-d61ad05389fe">
+                    <propertyInstance
+                      Id="f93f0e34-3378-4124-86a0-80b76113c01d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44fdc1b5-469b-42b8-9084-b065f28e692c">
+                    <propertyInstance
+                      Id="2358efec-786f-4525-aaec-ea721455547e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="30f69593-df71-4438-a1dd-2c844fa3336b"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="af0e0959-78e0-4918-bee6-db07e6701d61"
+                      LastKnownName="IList&lt;UInt64‎&gt;"
+                      LastKnownLocation="Package7_0413.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

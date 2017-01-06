@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VK-Monitor.WebMVC", "VK-Monitor.WebMVC\VK-Monitor.WebMVC.csproj", "{B8B05C4A-C6CF-4F85-985E-4AFC981A17F8}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VK-Monitor.BusinessLogic", "VK-Monitor.BusinessLogic\VK-Monitor.BusinessLogic.csproj", "{8B7850EB-5E01-44F0-83BA-3FEDE287F5A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VK-Monitor.Domain", "VK-Monitor.Domain\VK-Monitor.Domain.csproj", "{483BD8D1-9006-42C6-B9CB-A324C082F966}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VK-Monitor.UnitTests", "VK-Monitor.UnitTests\VK-Monitor.UnitTests.csproj", "{2A85BA58-1E6E-4AFC-8691-ECBC8E57D229}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VK-Monitor.ConsoleUI", "VK-Monitor.ConsoleUI\VK-Monitor.ConsoleUI.csproj", "{9D4E2FE0-4985-4F94-ACF4-882F40E444D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VK-Monitor.WebUI", "VK-Monitor.WebUI\VK-Monitor.WebUI.csproj", "{4178A42E-ECFA-4D9B-85D1-533405C83BB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VK-Monitor.CrawlerConsole", "VK-Monitor.CrawlerConsole\VK-Monitor.CrawlerConsole.csproj", "{456F08B5-C940-4D81-8B5E-626A24E52F7D}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "VK-Monitor.UML", "VK-Monitor.UML\VK-Monitor.UML.modelproj", "{97FDACF4-4138-4B13-AA4D-4929FA83114C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +23,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B8B05C4A-C6CF-4F85-985E-4AFC981A17F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8B05C4A-C6CF-4F85-985E-4AFC981A17F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B8B05C4A-C6CF-4F85-985E-4AFC981A17F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B8B05C4A-C6CF-4F85-985E-4AFC981A17F8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8B7850EB-5E01-44F0-83BA-3FEDE287F5A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8B7850EB-5E01-44F0-83BA-3FEDE287F5A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B7850EB-5E01-44F0-83BA-3FEDE287F5A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +35,22 @@ Global
 		{2A85BA58-1E6E-4AFC-8691-ECBC8E57D229}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A85BA58-1E6E-4AFC-8691-ECBC8E57D229}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A85BA58-1E6E-4AFC-8691-ECBC8E57D229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D4E2FE0-4985-4F94-ACF4-882F40E444D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D4E2FE0-4985-4F94-ACF4-882F40E444D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D4E2FE0-4985-4F94-ACF4-882F40E444D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D4E2FE0-4985-4F94-ACF4-882F40E444D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4178A42E-ECFA-4D9B-85D1-533405C83BB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4178A42E-ECFA-4D9B-85D1-533405C83BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4178A42E-ECFA-4D9B-85D1-533405C83BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4178A42E-ECFA-4D9B-85D1-533405C83BB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{456F08B5-C940-4D81-8B5E-626A24E52F7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{456F08B5-C940-4D81-8B5E-626A24E52F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{456F08B5-C940-4D81-8B5E-626A24E52F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{456F08B5-C940-4D81-8B5E-626A24E52F7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97FDACF4-4138-4B13-AA4D-4929FA83114C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97FDACF4-4138-4B13-AA4D-4929FA83114C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97FDACF4-4138-4B13-AA4D-4929FA83114C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97FDACF4-4138-4B13-AA4D-4929FA83114C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

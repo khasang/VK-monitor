@@ -39,8 +39,20 @@
       <HintPath>..\packages\HtmlAgilityPack.1.4.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Moq, Version=4.2.1510.2205, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.4.2.1510.2205\lib\net40\Moq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Serilog, Version=1.5.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\packages\Serilog.1.5.14\lib\net45\Serilog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Serilog.FullNetFx, Version=1.5.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\packages\Serilog.1.5.14\lib\net45\Serilog.FullNetFx.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -62,13 +74,36 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UT_VKHandle.cs" />
+    <Compile Include="FakeClasses\FakeDataManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FakeClasses\FakeLogger.cs" />
+    <Compile Include="FakeClasses\FakeVkService.cs" />
+    <Compile Include="UT_Work.cs" />
+    <Compile Include="UT_Report3.cs" />
+    <Compile Include="UT_VkHandle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VK-Monitor.BusinessLogic\VK-Monitor.BusinessLogic.csproj">
       <Project>{8b7850eb-5e01-44f0-83ba-3fede287f5a8}</Project>
       <Name>VK-Monitor.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VK-Monitor.ConsoleUI\VK-Monitor.ConsoleUI.csproj">
+      <Project>{9d4e2fe0-4985-4f94-acf4-882f40e444d3}</Project>
+      <Name>VK-Monitor.ConsoleUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VK-Monitor.CrawlerConsole\VK-Monitor.CrawlerConsole.csproj">
+      <Project>{456f08b5-c940-4d81-8b5e-626a24e52f7d}</Project>
+      <Name>VK-Monitor.CrawlerConsole</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VK-Monitor.Domain\VK-Monitor.Domain.csproj">
+      <Project>{483bd8d1-9006-42c6-b9cb-a324c082f966}</Project>
+      <Name>VK-Monitor.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VK-Monitor.WebUI\VK-Monitor.WebUI.csproj">
+      <Project>{4178a42e-ecfa-4d9b-85d1-533405c83bb1}</Project>
+      <Name>VK-Monitor.WebUI</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

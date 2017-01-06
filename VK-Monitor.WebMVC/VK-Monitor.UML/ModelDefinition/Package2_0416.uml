@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="538f9c73-270c-46e4-8c91-80c0b2606245"
+  name="Model"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="30cf6264-7bc8-46f3-8dbe-b84e1440c27d"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DVkNet.Model"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="8581a7e5-23ae-4624-a6fd-8ce7f6332b6a"
+        name="User"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="e7240868-278b-48ac-af6c-a20c4caa4b98"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Model Type%3DUser"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3e4069ca-b339-4710-beca-937484020d45"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e72a13b4-cbfd-4564-a24b-f642ed6c1b26">
+                <propertyInstance
+                  Id="a3b7d1f2-96bc-40fa-b83e-d78cb67fea3a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="31a8a7f6-cebe-439f-9e6b-be5a0a102033">
+                <propertyInstance
+                  Id="ed29b317-4581-405c-bac2-9737f69a8d8b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fbd99459-e66c-418b-a47d-5bb3ffecc5c5">
+                <propertyInstance
+                  Id="984ed793-7728-4598-90ae-cbbf38925758"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b79016a9-d1ba-4402-85b6-f2e449ae80b7">
+                <propertyInstance
+                  Id="13c340f7-d819-4951-97a3-4be8b33131f6"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0e20eec4-160a-4271-afd7-78c7c4f7bed0">
+                <propertyInstance
+                  Id="4152da70-d9d9-41e2-95d6-50d30b281ced"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2ab6f325-3985-4420-9482-bb5b4a20bba5"
+        name="Group"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="93391429-7273-4e6e-986e-bc668b5c13f0"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Model Type%3DGroup"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="13ff1970-3580-4dd1-aa74-d3fde4dd014d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="05ded894-a9cf-4d47-aa7a-47d84343a912">
+                <propertyInstance
+                  Id="3924b65a-e687-4569-acfb-cc5b125e6caa"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="76b90406-0aa4-4935-9d29-b44086d95b0c">
+                <propertyInstance
+                  Id="14342650-c44f-4441-8c8c-1e0077be5685"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4772ba90-992f-447a-94d6-ab8ba74118fe">
+                <propertyInstance
+                  Id="f1bfcb0f-3bbf-422d-9c7a-4c331d655a95"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="26d88836-85b6-45f1-88d4-31ef0d7fc76b">
+                <propertyInstance
+                  Id="895c44af-a025-441f-8c24-6c3af2395606"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5bd2c2df-e5f7-4053-8783-054ffd51c4e5">
+                <propertyInstance
+                  Id="90d464e2-0d34-462f-8e36-059333185d84"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="94a6508f-c64b-48d9-81a1-1caaa449f5ea"
+        LastKnownName="RequestParams"
+        LastKnownLocation="Package6_0416.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="683522cd-4acd-42f3-9070-4f998cef0b7c"
+        name="Comment"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="b1d05ee8-4495-49ca-96f4-23f84602620f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Model Type%3DComment"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="8c6d0e36-31ba-41ae-940b-20ad4137d8ea"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="13f91828-ce51-4660-9285-689e1e005eee">
+                <propertyInstance
+                  Id="3a41e33c-2508-4f58-b563-6d503d41e569"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0e76b3ff-ceb8-4d15-b1c7-24b490c7b27e">
+                <propertyInstance
+                  Id="ed17a043-5ede-4084-b70f-8fe8a1c6e607"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c8a0f417-cde7-4e70-a520-deb46d619b1b">
+                <propertyInstance
+                  Id="aac3d9bc-88bc-4a03-9978-7b7bb34a0477"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="453b9ed6-d585-4020-a8c7-ae2dafd4664c">
+                <propertyInstance
+                  Id="fa873a27-ddf9-4241-8f90-60b07d451caf"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="06f3d185-5093-4c8d-8d6e-9b18137be813">
+                <propertyInstance
+                  Id="403d6a74-02ef-4fd9-979b-0501427e7e39"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="897c9d49-c13b-494e-9b98-c64a430723bb"
+        name="WallGetObject"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="eb4a1da1-24e9-4ccd-aee4-b0f2f8f94ea4"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2FProjects%2FVK-monitor%2FVK-Monitor.WebMVC%2Fpackages%2FVkNet.1.21.0%2Flib%2Fnet40%2FVkNet.dll Namespace%3DVkNet.Model Type%3DWallGetObject"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="32cbbcda-9c92-48a6-b9ad-15a60e71ff6e"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="599d788c-da62-4f18-bb08-f4e3621b2037">
+                <propertyInstance
+                  Id="dc9f904e-89d0-4415-be4e-f04624375614"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4e29292a-bbb1-485b-9dfe-8428e4340a20">
+                <propertyInstance
+                  Id="bf43eec4-6e64-417d-b122-7ece1818803d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e06137d4-9937-48c9-9be1-46659ec44ebc">
+                <propertyInstance
+                  Id="92178c65-e59d-402a-8a74-cb3be699eae2"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5853362d-8316-4671-933e-9770187369c3">
+                <propertyInstance
+                  Id="5e7291e0-bc16-433b-a1c6-621f13e1d320"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="47383624-b79a-4b28-8f8f-c89d5c380f1d">
+                <propertyInstance
+                  Id="101d6f07-daaf-45c1-8d56-20090db71051"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

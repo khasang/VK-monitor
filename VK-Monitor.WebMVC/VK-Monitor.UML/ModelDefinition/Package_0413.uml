@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="e2edcdc2-e67c-44c1-8ef8-224a2eafa46d"
+  name="VK_Monitor"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="79e4b33d-d1b4-43b5-a6cd-68a41e5d6bba"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DVK_Monitor"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="905dda05-acea-4b2f-9cf1-c6a8a4eefebf"
+        LastKnownName="BusinessLogic"
+        LastKnownLocation="Package1_0413.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e59d9808-de10-4fb1-ba06-32d2e669ba93"
+        LastKnownName="Domain"
+        LastKnownLocation="Package4_0413.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
